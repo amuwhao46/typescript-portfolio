@@ -1,10 +1,10 @@
-import Header from '@/components/Header'
-import Hero from '@/components/Hero'
-import Head from 'next/head' 
+import Header from "@/components/Header";
+import Hero from "@/components/Hero";
+import Head from "next/head";
 
 export default function Home() {
   return (
-    <div className='bg-slate-900 h-screen text-white snap-y snap-mandatory overflow-scroll z-0'>
+    <div className="bg-slate-900 h-screen text-white snap-y snap-mandatory overflow-scroll z-0">
       <Head>
         <title>Oke's Portfolio</title>
         <meta name="viewport" content="width=device-width, initial-scale=1" />
@@ -14,7 +14,7 @@ export default function Home() {
       {/* Header */}
       <Header />
       {/* Hero */}
-      <section id='hero' className='snap-center'>
+      <section id="hero" className="snap-center">
         <Hero />
       </section>
       {/* About */}
@@ -22,7 +22,6 @@ export default function Home() {
       {/* Skills */}
       {/* Projects */}
       {/* Contact Me */}
-
     </div>
-  )
+  );
 }
