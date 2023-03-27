@@ -20,9 +20,9 @@ export default function Header({}: Props) {
       transition={{
         duration: 1
       }}
-      className='flex flex-row md:flex-grow items-center pt-4 mx-auto'>
+      className='flex flex-row justify-center md:justify-start md:flex-grow items-center pt-4 mx-auto'>
         {/* Logo & Name */}
-        <h1 className='text-gray-300 text-3xl font-bold'>Oke Amuwha</h1>
+        <h1 className='text-gray-500 text-3xl font-bold'>Oke Amuwha</h1>
       </motion.div>
       <motion.hr 
       initial={{opacity: 0}} 
