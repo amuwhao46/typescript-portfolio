@@ -6,7 +6,7 @@ import Head from "next/head";
 
 export default function Home() {
   return (
-    <div className="bg-neutral-900 h-screen text-white snap-y overflow-scroll z-0 snap-proximity">
+    <div className="bg-neutral-900 h-screen text-white snap-y overflow-scroll z-0 snap-mandatory">
       <Head>
         <title>Oke's Portfolio</title>
         <meta name="viewport" content="width=device-width, initial-scale=1" />
