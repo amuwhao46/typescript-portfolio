@@ -1,4 +1,5 @@
 import About from "@/components/About";
+import Experience from "@/components/Experience";
 import Header from "@/components/Header";
 import Hero from "@/components/Hero";
 import Head from "next/head";
@@ -12,17 +13,17 @@ export default function Home() {
         <link rel="icon" href="/Favicon_Logo.png" />
       </Head>
 
-      {/* Header */}
       <Header />
-      {/* Hero */}
       <section id="hero" className="snap-start">
         <Hero />
       </section>
-      {/* About */}
       <section id="about" className="snap-center">
         <About />
       </section>
       {/* Experience */}
+      <section id="experience" className="snap-center">
+        <Experience />
+      </section>
       {/* Skills */}
       {/* Projects */}
       {/* Contact Me */}
