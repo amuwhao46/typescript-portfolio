@@ -7,7 +7,7 @@ type Props = {};
 
 export default function Header({}: Props) {
   return (
-    <header className="sticky top-0 items-start md:px-8 z-10 bg-neutral-900/60">
+    <header className="sticky top-0 z-10 items-start bg-neutral-900/60 md:px-8">
       <motion.div
         initial={{
           x: -500,
@@ -22,11 +22,11 @@ export default function Header({}: Props) {
         transition={{
           duration: 1,
         }}
-        className="flex flex-row justify-center md:justify-start md:flex-grow items-center pt-4 mx-auto"
+        className="mx-auto flex flex-row items-center justify-center pt-4 md:flex-grow md:justify-start"
       >
         {/* Logo & Name */}
         <Image src={Logo} width={25} alt="My logo" className="mx-2" />
-        <h1 className="text-gray-500 text-3xl font-bold">Oke Amuwha</h1>
+        <h1 className="text-3xl font-bold text-gray-500">Oke Amuwha</h1>
       </motion.div>
       <motion.hr
         initial={{ opacity: 0 }}

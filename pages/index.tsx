@@ -1,13 +1,15 @@
 import About from "@/components/About";
+import Contacts from "@/components/Contacts";
 import Experience from "@/components/Experience";
 import Header from "@/components/Header";
 import Hero from "@/components/Hero";
+import Projects from "@/components/Projects";
 import Skills from "@/components/Skills";
 import Head from "next/head";
 
 export default function Home() {
   return (
-    <div className="bg-neutral-900 h-screen text-white snap-y overflow-scroll z-0 snap-proximity">
+    <div className="z-0 h-screen snap-y snap-proximity overflow-scroll bg-neutral-900 text-white">
       <Head>
         <title>Oke's Portfolio</title>
         <meta name="viewport" content="width=device-width, initial-scale=1" />
@@ -27,8 +29,13 @@ export default function Home() {
       <section id="skills" className="snap-start">
         <Skills />
       </section>
-      {/* Projects */}
+      <section id="projects" className="snap-center">
+        <Projects />
+      </section>
       {/* Contact Me */}
+      <section id="contact" className="snap-start">
+        <Contacts />
+      </section>
     </div>
   );
 }

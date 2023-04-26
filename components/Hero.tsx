@@ -9,18 +9,22 @@ type Props = {};
 
 function Hero({}: Props) {
   const [text, count] = useTypewriter({
-    words: ["Take a breath, breath in", "Long live javascript", "Built Different"],
+    words: [
+      "Take a breath, breath in",
+      "Long live javascript",
+      "Built Different",
+    ],
     loop: true,
     delaySpeed: 2000,
   });
 
   return (
-    <div className="h-screen flex flex-col space-y-8 items-center justify-center text-center overflow-hidden">
+    <div className="flex h-screen flex-col items-center justify-center space-y-8 overflow-hidden text-center">
       <BackgroundCircles />
       <Image
         src={Portrait}
         alt="Portrait image"
-        className="relative rounded-full h-32 w-32 mx-auto object-cover"
+        className="relative mx-auto h-32 w-32 rounded-full object-cover"
       />
       <div className="z-10">
         <h2 className="tracking-widest">Full Stack Web Developer</h2>
@@ -29,16 +33,16 @@ function Hero({}: Props) {
           <Cursor />
         </h1>
         <div className="pt-5">
-          <Link href='#about'>
+          <Link href="#about">
             <button className="heroButton">About</button>
           </Link>
-          <Link href='#experience'>
+          <Link href="#experience">
             <button className="heroButton">Experience</button>
           </Link>
-          <Link href='#skills'>
+          <Link href="#skills">
             <button className="heroButton">Skills</button>
           </Link>
-          <Link href='#projects'>
+          <Link href="#projects">
             <button className="heroButton">Projects</button>
           </Link>
         </div>
