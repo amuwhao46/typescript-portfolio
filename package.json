@@ -19,6 +19,7 @@
     "next": "13.2.4",
     "react": "18.2.0",
     "react-dom": "18.2.0",
+    "react-hook-form": "^7.43.9",
     "react-simple-typewriter": "^5.0.1",
     "typescript": "5.0.2"
   },
@@ -28,6 +29,7 @@
     "postcss": "^8.4.21",
     "prettier": "^2.8.8",
     "prettier-plugin-tailwindcss": "^0.2.7",
+    "tailwind-scrollbar": "^3.0.1",
     "tailwindcss": "^3.2.7"
   }
 }
