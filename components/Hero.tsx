@@ -27,7 +27,9 @@ function Hero({}: Props) {
         className="relative mx-auto h-48 w-48 rounded-full object-cover"
       />
       <div className="z-10">
-        <h2 className="tracking-widest font-semibold text-lg">Full Stack Web Developer</h2>
+        <h2 className="text-lg font-semibold tracking-widest">
+          Full Stack Web Developer
+        </h2>
         <h1 className="text-2xl font-bold text-gray-200">
           <span>{text}</span>
           <Cursor />

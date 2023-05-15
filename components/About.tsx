@@ -33,9 +33,7 @@ function About({}: Props) {
         className=" mt-40 h-56 w-56 flex-shrink-0 rounded-full object-cover md:mb-0 md:h-96 md:w-64 md:rounded-lg xl:h-[400px] xl:w-[300px]"
       />
       <div className="space-y-10 px-0 md:px-10">
-        <h4 className="text-4xl font-semibold mt-5">
-          A little background
-        </h4>
+        <h4 className="mt-5 text-4xl font-semibold">A little background</h4>
         <p>
           Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
           eiusmod tempor incididunt ut labore et dolore magna aliqua. Leo in
