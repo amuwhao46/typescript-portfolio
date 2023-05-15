@@ -24,28 +24,14 @@ function Hero({}: Props) {
       <Image
         src={Portrait}
         alt="Portrait image"
-        className="relative mx-auto h-32 w-32 rounded-full object-cover"
+        className="relative mx-auto h-48 w-48 rounded-full object-cover"
       />
       <div className="z-10">
-        <h2 className="tracking-widest">Full Stack Web Developer</h2>
-        <h1>
+        <h2 className="tracking-widest font-semibold text-lg">Full Stack Web Developer</h2>
+        <h1 className="text-2xl font-bold text-gray-200">
           <span>{text}</span>
           <Cursor />
         </h1>
-        <div className="pt-5">
-          <Link href="#about">
-            <button className="heroButton">About</button>
-          </Link>
-          <Link href="#experience">
-            <button className="heroButton">Experience</button>
-          </Link>
-          <Link href="#skills">
-            <button className="heroButton">Skills</button>
-          </Link>
-          <Link href="#projects">
-            <button className="heroButton">Projects</button>
-          </Link>
-        </div>
       </div>
     </div>
   );

@@ -8,12 +8,10 @@ export default function Skill({}: Props) {
     <div className="group relative flex cursor-pointer">
       <motion.img
         initial={{
-          x: -200,
           opacity: 0,
         }}
         transition={{ duration: 1 }}
         whileInView={{
-          x: 0,
           opacity: 1,
         }}
         src="https://t4.ftcdn.net/jpg/00/59/96/75/360_F_59967553_9g2bvhTZf18zCmEVWcKigEoevGzFqXzq.jpg"

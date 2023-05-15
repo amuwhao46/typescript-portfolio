@@ -2,6 +2,7 @@ import React from "react";
 import Image from "next/image";
 import Logo from "../public/Logo.svg";
 import { motion } from "framer-motion";
+import Link from "next/link";
 
 type Props = {};
 
@@ -26,8 +27,22 @@ export default function Header({}: Props) {
       >
         {/* Logo & Name */}
         <Image src={Logo} width={25} alt="My logo" className="mx-2" />
-        <h1 className="text-3xl font-bold text-gray-500">Oke Amuwha</h1>
+        <h1 className="text-3xl font-bold text-white">Oke Amuwha</h1>
       </motion.div>
+      <div className="flex flex-row space-x-4 justify-center text-gray-300 pt-3">
+        <Link href="#about">
+          <button className="">About</button>
+        </Link>
+        <Link href="#experience">
+          <button className="">Experience</button>
+        </Link>
+        <Link href="#skills">
+          <button className="">Skills</button>
+        </Link>
+        <Link href="#projects">
+          <button className="">Projects</button>
+        </Link>
+      </div>
       <motion.hr
         initial={{ opacity: 0 }}
         animate={{ opacity: 1 }}

@@ -30,13 +30,11 @@ function About({}: Props) {
         }}
         viewport={{ once: true }}
         src="https://t4.ftcdn.net/jpg/00/59/96/75/360_F_59967553_9g2bvhTZf18zCmEVWcKigEoevGzFqXzq.jpg"
-        className="-mb-20 h-56 w-56 flex-shrink-0 rounded-full object-cover md:mb-0 md:h-96 md:w-64 md:rounded-lg xl:h-[400px] xl:w-[300px]"
+        className=" mt-40 h-56 w-56 flex-shrink-0 rounded-full object-cover md:mb-0 md:h-96 md:w-64 md:rounded-lg xl:h-[400px] xl:w-[300px]"
       />
       <div className="space-y-10 px-0 md:px-10">
-        <h4 className="text-4xl font-semibold">
-          Here is a{" "}
-          <span className="underline decoration-red-600/50">little</span>{" "}
-          background
+        <h4 className="text-4xl font-semibold mt-5">
+          A little background
         </h4>
         <p>
           Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
