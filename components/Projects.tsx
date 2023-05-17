@@ -24,7 +24,7 @@ export default function Projects({}: Props) {
       <div className="relative z-20 flex w-full snap-x snap-mandatory overflow-y-hidden overflow-x-scroll scrollbar-thin scrollbar-track-gray-400/20 scrollbar-thumb-white/80 md:mt-40">
         {/* Projects */}
         {projects.map((project, index) => (
-          <div className="flex h-screen w-screen flex-shrink-0 snap-center flex-col items-center justify-center space-y-5 p-20 md:p-44">
+          <div className="flex h-screen w-screen md:w-[1000px] flex-shrink-0 snap-center flex-col items-center justify-center space-y-5 p-20 md:p-44">
             <img
               src="https://t4.ftcdn.net/jpg/00/59/96/75/360_F_59967553_9g2bvhTZf18zCmEVWcKigEoevGzFqXzq.jpg"
               alt="test"

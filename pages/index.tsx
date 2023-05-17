@@ -9,7 +9,7 @@ import Head from "next/head";
 
 export default function Home() {
   return (
-    <div className="z-0 h-screen snap-y snap-proximity overflow-y-scroll overflow-x-hidden scrollbar-thin scrollbar-track-gray-400/20 scrollbar-thumb-white/80 bg-neutral-900 text-white">
+    <div className="z-0 h-screen snap-y snap-proximity overflow-y-scroll overflow-x-hidden scrollbar-thin scrollbar-track-gray-400/20 scrollbar-thumb-white/80 bg-neutral-900 text-white scroll-smooth">
       <Head>
         <title>Oke's Portfolio</title>
         <meta name="viewport" content="width=device-width, initial-scale=1" />

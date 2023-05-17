@@ -26,7 +26,7 @@ function Hero({}: Props) {
         alt="Portrait image"
         className="relative mx-auto h-48 w-48 rounded-full object-cover"
       />
-      <div className="z-10">
+      <div className="z-0">
         <h2 className="text-lg font-semibold tracking-widest">
           Full Stack Web Developer
         </h2>
