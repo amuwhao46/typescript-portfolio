@@ -24,12 +24,10 @@ export default function Header({}: Props) {
   return (
     <header className="sticky top-0 z-10 items-start">
       <nav
-        id="navbar"
-        className="flex-center inset-x-0 flex flex-wrap justify-between p-5 shadow-xl backdrop-blur bg-neutral-800/50"
+        
+        className="flex-center inset-x-0 flex flex-wrap justify-between bg-neutral-800/50 p-5 shadow-xl backdrop-blur"
       >
-        <Link 
-          onClick={handleOnClick}
-          href="#hero">
+        <Link onClick={handleOnClick} href="#hero">
           <div className="mr-6 flex flex-shrink-0 items-center text-white">
             <Image src={Logo} width={30} alt="My logo" className="mx-2" />
             <span className="text-3xl font-bold tracking-tight">
@@ -37,10 +35,11 @@ export default function Header({}: Props) {
             </span>
           </div>
         </Link>
-        <div id="hamburger" className="block md:hidden">
+        <div className="block md:hidden">
           <button
-          onClick={handleOnClick} 
-          className="flex items-center rounded border border-white px-3 py-2 text-white transition-colors hover:border-gray-300 hover:text-gray-200">
+            onClick={handleOnClick}
+            className="flex items-center rounded border border-white px-3 py-2 text-white transition-colors hover:border-gray-300 hover:text-gray-200"
+          >
             <svg
               className="h-3 w-3 fill-current"
               viewBox="0 0 20 20"
@@ -51,11 +50,12 @@ export default function Header({}: Props) {
             </svg>
           </button>
         </div>
-        <div
-          id="content"
-          className="w-full md:flex md:w-auto md:items-center"
-        >
-          <div className={`text-md md:flex-grow md:block ${navbar ? "block" : "hidden"}`}>
+        <div className="w-full md:flex md:w-auto md:items-center">
+          <div
+            className={`text-md md:block md:flex-grow ${
+              navbar ? "block" : "hidden"
+            }`}
+          >
             <Link
               onClick={handleOnClick}
               href="#about"
