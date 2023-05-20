@@ -25,9 +25,11 @@ export default function Header({}: Props) {
     <header className="sticky top-0 z-10 items-start">
       <nav
         id="navbar"
-        className="flex-center inset-x-0 flex flex-wrap justify-between rounded-bl-lg rounded-br-lg  p-5 shadow-xl backdrop-blur bg-neutral-800/50"
+        className="flex-center inset-x-0 flex flex-wrap justify-between p-5 shadow-xl backdrop-blur bg-neutral-800/50"
       >
-        <Link href="#hero">
+        <Link 
+          onClick={handleOnClick}
+          href="#hero">
           <div className="mr-6 flex flex-shrink-0 items-center text-white">
             <Image src={Logo} width={30} alt="My logo" className="mx-2" />
             <span className="text-3xl font-bold tracking-tight">
@@ -55,6 +57,7 @@ export default function Header({}: Props) {
         >
           <div className={`text-md md:flex-grow md:block ${navbar ? "block" : "hidden"}`}>
             <Link
+              onClick={handleOnClick}
               href="#about"
               rel="noopener noreferrer"
               className="mt-4 mr-4 block transition-colors hover:text-gray-300 md:mt-0 md:inline-block"
@@ -62,6 +65,7 @@ export default function Header({}: Props) {
               About
             </Link>
             <Link
+              onClick={handleOnClick}
               href="#experience"
               rel="noopener noreferrer"
               className="mt-4 mr-4 block transition hover:text-gray-300 md:mt-0 md:inline-block"
@@ -69,6 +73,7 @@ export default function Header({}: Props) {
               Experience
             </Link>
             <Link
+              onClick={handleOnClick}
               href="#skills"
               rel="noopener noreferrer"
               className="mt-4 mr-4 block transition-colors hover:text-gray-300 md:mt-0 md:inline-block"
@@ -76,6 +81,7 @@ export default function Header({}: Props) {
               Skills
             </Link>
             <Link
+              onClick={handleOnClick}
               href="#projects"
               rel="noopener noreferrer"
               className="mt-4 mr-4 block transition-colors hover:text-gray-300 md:mt-0 md:inline-block"
@@ -83,6 +89,7 @@ export default function Header({}: Props) {
               Projects
             </Link>
             <Link
+              onClick={handleOnClick}
               href="#contact"
               rel="noopener noreferrer"
               className="mt-4 mr-4 block transition-colors hover:text-gray-300 md:mt-0 md:inline-block"
@@ -90,6 +97,7 @@ export default function Header({}: Props) {
               Contact
             </Link>
             <Link
+              onClick={handleOnClick}
               href="files/Oke-Oghene_Amuwha_Resume.pdf"
               target="_blank"
               rel="noopener noreferrer"
