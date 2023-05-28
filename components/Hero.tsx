@@ -10,27 +10,26 @@ type Props = {};
 function Hero({}: Props) {
   const [text, count] = useTypewriter({
     words: [
-      "Take a breath, breath in",
-      "Long live javascript",
-      "Built Different",
+      "Fullstack Web Developer",
+      "UI/UX Designer",
     ],
     loop: true,
     delaySpeed: 2000,
   });
 
   return (
-    <div className="flex h-screen flex-col items-center justify-center space-y-8 overflow-hidden text-center">
+    <div className="flex h-screen flex-col items-center justify-center space-y-10 overflow-hidden text-center">
       <BackgroundCircles />
-      <Image
+      {/* <Image
         src={Portrait}
         alt="Portrait image"
         className="relative mx-auto h-48 w-48 rounded-full object-cover"
-      />
-      <div className="z-0">
-        <h2 className="text-lg font-semibold tracking-widest">
-          Full Stack Web Developer
+      /> */}
+      <div className="z-10">
+        <h2 className="text-lg text-gray-300 tracking-widest">
+          Oke-Oghene Amuwha
         </h2>
-        <h1 className="text-2xl font-bold text-gray-200">
+        <h1 className="text-xl md:text-3xl font-bold text-white tracking-widest md:tracking-[10px]">
           <span>{text}</span>
           <Cursor />
         </h1>

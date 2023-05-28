@@ -11,7 +11,7 @@ function About({}: Props) {
       initial={{ opacity: 0 }}
       whileInView={{ opacity: 1 }}
       transition={{ duration: 1.5 }}
-      className="relative mx-auto flex h-screen max-w-7xl flex-col items-center justify-evenly px-10 text-center md:flex-row md:text-left"
+      className="relative mx-auto flex h-screen max-w-7xl flex-col items-center justify-evenly px-5 md:px-20 text-center md:flex-row md:text-left"
     >
       <h3 className="absolute top-24 text-2xl uppercase tracking-[20px] text-gray-500">
         About
@@ -29,8 +29,8 @@ function About({}: Props) {
           opacity: 1,
         }}
         viewport={{ once: true }}
-        src="https://t4.ftcdn.net/jpg/00/59/96/75/360_F_59967553_9g2bvhTZf18zCmEVWcKigEoevGzFqXzq.jpg"
-        className=" mt-40 h-56 w-56 flex-shrink-0 rounded-full object-cover md:mb-0 md:h-96 md:w-64 md:rounded-lg xl:h-[400px] xl:w-[300px]"
+        src="https://media.licdn.com/dms/image/D5603AQGYXjbTeqETOw/profile-displayphoto-shrink_400_400/0/1683862875181?e=1690416000&v=beta&t=0nJCKi_5u6qqW95QqRJ4fXcN668ZRmEwJe6noGhRVDw"
+        className="mt-40 h-40 w-40 flex-shrink-0 rounded-full object-cover md:mb-0 md:h-96 md:w-64 md:rounded-lg xl:h-[400px] xl:w-[300px]"
       />
       <div className="space-y-10 px-0 md:px-10">
         <h4 className="mt-5 text-4xl font-semibold">A little background</h4>

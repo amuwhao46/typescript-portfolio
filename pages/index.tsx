@@ -6,7 +6,9 @@ import Header from "@/components/Header";
 import Hero from "@/components/Hero";
 import Projects from "@/components/Projects";
 import Skills from "@/components/Skills";
+import { ArrowSmallUpIcon, ArrowUpIcon } from "@heroicons/react/24/solid";
 import Head from "next/head";
+import Link from "next/link";
 
 export default function Home() {
   return (
@@ -30,13 +32,22 @@ export default function Home() {
       <section id="skills" className="snap-start">
         <Skills />
       </section>
-      <section id="projects" className="snap-center">
+      <section id="projects" className="snap-center"> 
         <Projects />
       </section>
       {/* Contact Me */}
       <section id="contact" className="snap-center">
         <Contacts />
       </section>
+
+      <Link href="#hero">
+        <div className="sticky bottom-5 w-full cursor-pointer mb-5 animate-bounce">
+          <div className="flex items-center justify-center">
+            <ArrowSmallUpIcon className="w-10 h-10 bg-gray-700 rounded-full" />
+          </div>
+        </div>
+      </Link>
+
       <section className="snap-end">
         <Footer />
       </section>
