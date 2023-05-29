@@ -13,21 +13,21 @@ export default function Contacts({}: Props) {
       <div className="flex flex-col space-y-10">
         <h4 className="text-center text-4xl font-semibold">Get in touch</h4>
         <div className="flex items-center justify-center space-x-5">
-          <EnvelopeIcon className="mr-2 inline-block h-7 w-7 animate-pulse text-gray-600" />
+          <EnvelopeIcon className="inline-block h-7 w-7 text-white" />
           <p className="text-2xl">amuwhao46@gmail.com</p>
         </div>
-        <div className="flex flex-row justify-between">
+        <div className="flex flex-row justify-between items-center mx-auto">
           <SocialIcon
             bgColor="transparent"
             fgColor="white"
             url="https://www.linkedin.com/in/oke-oghene-amuwha-1b1489203/"
-            style={{ height: 50, width: 50 }}
+            style={{ height: 70, width: 70 }}
           />
                     <SocialIcon
             bgColor="transparent"
             fgColor="white"
             url="https://github.com/amuwhao46"
-            style={{ height: 50, width: 50 }}
+            style={{ height: 70, width: 70 }}
           />
         </div>
       </div>

@@ -9,14 +9,14 @@ export default function Footer({}: Props) {
         <h1 className="text-3xl font-bold">Created by</h1>
         <p className="text-lg">Oke Amuwha</p>
       </div>
-      <div>
+      {/* <div>
         <h1 className="text-3xl font-bold">Websites</h1>
         <a href="https://okeamuwha.com" rel="noreferrer" target="_blank">
           <p className="text-lg transition hover:text-gray-300">
             okeamuwha.com
           </p>
         </a>
-      </div>
+      </div> */}
     </footer>
   );
 }

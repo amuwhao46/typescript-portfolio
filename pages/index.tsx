@@ -43,7 +43,7 @@ export default function Home() {
       <Link href="#hero">
         <div className="sticky bottom-5 w-full cursor-pointer mb-5 animate-bounce">
           <div className="flex items-center justify-center">
-            <ArrowSmallUpIcon className="w-10 h-10 bg-gray-700 rounded-full" />
+            <ArrowSmallUpIcon className="w-10 h-10 p-2 bg-neutral-800/60 backdrop-blur rounded-full" />
           </div>
         </div>
       </Link>
