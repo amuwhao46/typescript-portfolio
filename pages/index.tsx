@@ -1,16 +1,37 @@
 import About from "@/components/About";
 import Contacts from "@/components/Contacts";
-import Experience from "@/components/Experience";
+import WorkExperience from "@/components/WorkExperience";
 import Footer from "@/components/Footer";
 import Header from "@/components/Header";
 import Hero from "@/components/Hero";
 import Projects from "@/components/Projects";
 import Skills from "@/components/Skills";
-import { ArrowSmallUpIcon, ArrowUpIcon } from "@heroicons/react/24/solid";
+import { ArrowSmallUpIcon } from "@heroicons/react/24/solid";
+import { GetStaticProps } from "next";
 import Head from "next/head";
 import Link from "next/link";
+import { PageInfo, Experience, Skill, Project, Social } from "@/typings";
+import { fetchPageInfo } from "@/utils/fetchPageInfo";
+import { fetchExperiences } from "@/utils/fetchExperience";
+import { fetchProjects } from "@/utils/fetchProject";
+import { fetchSkills } from "@/utils/fetchSkill";
+import { fetchSocials } from "@/utils/fetchSocials";
 
-export default function Home() {
+type Props = {
+  pageInfo: PageInfo;
+  experiences: Experience[];
+  projects: Project[];
+  skills: Skill[];
+  socials: Social[];
+};
+
+export default function Home({
+  pageInfo,
+  experiences,
+  projects,
+  skills,
+  socials,
+}: Props) {
   return (
     <div className="z-0 h-screen snap-y snap-proximity overflow-x-hidden overflow-y-scroll scroll-smooth bg-neutral-900 text-white scrollbar-thin scrollbar-track-gray-400/20 scrollbar-thumb-white/80">
       <Head>
@@ -27,12 +48,12 @@ export default function Home() {
         <About />
       </section>
       <section id="experience" className="snap-center">
-        <Experience />
+        <WorkExperience />
       </section>
       <section id="skills" className="snap-start">
         <Skills />
       </section>
-      <section id="projects" className="snap-center"> 
+      <section id="projects" className="snap-center">
         <Projects />
       </section>
       {/* Contact Me */}
@@ -41,9 +62,9 @@ export default function Home() {
       </section>
 
       <Link href="#hero">
-        <div className="sticky bottom-5 w-full cursor-pointer mb-5 animate-bounce">
+        <div className="sticky bottom-5 mb-5 w-full animate-bounce cursor-pointer">
           <div className="flex items-center justify-center">
-            <ArrowSmallUpIcon className="w-10 h-10 p-2 bg-neutral-800/60 backdrop-blur rounded-full" />
+            <ArrowSmallUpIcon className="h-10 w-10 rounded-full bg-neutral-800/60 p-2 backdrop-blur" />
           </div>
         </div>
       </Link>
@@ -54,3 +75,21 @@ export default function Home() {
     </div>
   );
 }
+
+export const getStaticProps: GetStaticProps<Props> = async () => {
+  const pageInfo = await fetchPageInfo();
+  const experiences = await fetchExperiences();
+  const projects = await fetchProjects();
+  const skills = await fetchSkills();
+  const socials = await fetchSocials();
+
+  return {
+    props: {
+      pageInfo,
+      experiences,
+      projects,
+      skills,
+      socials,
+    },
+  };
+};
