@@ -6,16 +6,6 @@ import Link from "next/link";
 
 type Props = {};
 
-// document.addEventListener("DOMContentLoaded", function () {
-//   let menu = document.getElementById("content");
-
-//   document
-//     .getElementById("hamburger")
-//     .addEventListener("click", (event) => {
-//       menu.classList.toggle("hidden");
-//     });
-// });
-
 export default function Header({}: Props) {
   const [navbar, setNavbar] = useState(false);
   const handleOnClick = () => {
