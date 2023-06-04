@@ -12,10 +12,7 @@ type Props = {
 
 function Hero({ pageInfo }: Props) {
   const [text, count] = useTypewriter({
-    words: [
-      "Fullstack Web Developer",
-      "UI/UX Designer",
-    ],
+    words: ["Fullstack Web Developer", "UI/UX Designer"],
     loop: true,
     delaySpeed: 2000,
   });
@@ -29,10 +26,10 @@ function Hero({ pageInfo }: Props) {
         className="relative mx-auto h-48 w-48 rounded-full object-cover"
       /> */}
       <div className="z-10">
-        <h2 className="text-lg text-gray-300 tracking-widest">
+        <h2 className="text-lg tracking-widest text-gray-300">
           Oke-Oghene Amuwha
         </h2>
-        <h1 className="text-xl md:text-3xl font-bold text-white tracking-widest md:tracking-[10px]">
+        <h1 className="text-xl font-bold tracking-widest text-white md:text-3xl md:tracking-[10px]">
           <span>{text}</span>
           <Cursor />
         </h1>

@@ -7,7 +7,7 @@ type Props = {
   skills: Skill[];
 };
 
-export default function Skills({skills}: Props) {
+export default function Skills({ skills }: Props) {
   return (
     <motion.div
       initial={{
@@ -28,7 +28,7 @@ export default function Skills({skills}: Props) {
         Better words here
       </h3>
       <div className="grid grid-cols-3 gap-5 md:grid-cols-4">
-      {skills?.map(skill => (
+        {skills?.map((skill) => (
           <ItemSkill key={skill._id} skill={skill} />
         ))}
         {/* <ItemSkill /> */}

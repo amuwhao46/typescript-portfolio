@@ -7,7 +7,7 @@ type Props = {
   skill: Skill;
 };
 
-export default function ItemSkill({skill}: Props) {
+export default function ItemSkill({ skill }: Props) {
   return (
     <div className="group relative flex cursor-pointer">
       <motion.img

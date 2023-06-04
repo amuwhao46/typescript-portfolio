@@ -8,8 +8,5 @@ export const fetchPageInfo = async () => {
   const data = await res.json();
   const pageInfo: PageInfo = data.pageInfo;
 
-  // Check if it works
-  // console.log("Attempting fetch pageInfo from Sanity", pageInfo);
-
-  return pageInfo
+  return pageInfo;
 };

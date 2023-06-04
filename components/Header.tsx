@@ -13,14 +13,11 @@ export default function Header({}: Props) {
   };
   return (
     <header className="sticky top-0 z-50 items-start">
-      <nav
-        
-        className="flex-center inset-x-0 flex flex-wrap justify-between bg-neutral-800/50 p-5 shadow-xl backdrop-blur"
-      >
+      <nav className="flex-center inset-x-0 flex flex-wrap justify-between bg-neutral-800/50 p-5 shadow-xl backdrop-blur">
         <Link onClick={handleOnClick} href="#hero">
           <div className="mr-6 flex flex-shrink-0 items-center text-white">
             <Image src={Logo} width={30} alt="My logo" className="mx-2" />
-            <span className="text-2xl md:text-3xl font-bold tracking-tight">
+            <span className="text-2xl font-bold tracking-tight md:text-3xl">
               Oke Amuwha
             </span>
           </div>

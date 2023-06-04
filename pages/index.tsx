@@ -35,7 +35,7 @@ export default function Home({
   return (
     <div className="z-0 h-screen snap-y snap-proximity overflow-x-hidden overflow-y-scroll scroll-smooth bg-neutral-900 text-white scrollbar-thin scrollbar-track-gray-400/20 scrollbar-thumb-white/80">
       <Head>
-        <title>Oke's Portfolio</title>
+        <title>Oke Amuwha Portfolio</title>
         <meta name="viewport" content="width=device-width, initial-scale=1" />
         <link rel="icon" href="/Favicon_Logo.png" />
       </Head>
@@ -91,7 +91,7 @@ export const getStaticProps: GetStaticProps<Props> = async () => {
       skills,
       socials,
     },
-    
+
     // Regenerates the page every 24 hours
     revalidate: 86400,
   };

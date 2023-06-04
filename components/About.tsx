@@ -9,13 +9,13 @@ type Props = {
   pageInfo: PageInfo;
 };
 
-function About({pageInfo}: Props) {
+function About({ pageInfo }: Props) {
   return (
     <motion.div
       initial={{ opacity: 0 }}
       whileInView={{ opacity: 1 }}
       transition={{ duration: 1.5 }}
-      className="relative mx-auto flex h-screen max-w-7xl flex-col items-center justify-evenly px-5 md:px-20 text-center md:flex-row md:text-left"
+      className="relative mx-auto flex h-screen max-w-7xl flex-col items-center justify-evenly px-5 text-center md:flex-row md:px-20 md:text-left"
     >
       <h3 className="absolute top-24 text-2xl uppercase tracking-[20px] text-gray-500">
         About

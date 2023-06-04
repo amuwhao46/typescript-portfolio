@@ -6,8 +6,5 @@ export const fetchSkills = async () => {
   const data = await res.json();
   const skills: Skill[] = data.skills;
 
-  // Check if it works
-  // console.log("Attempting fetch skills from Sanity", skills);
-
   return skills;
 };
