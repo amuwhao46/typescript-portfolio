@@ -7,7 +7,7 @@ export const fetchProjects = async() => {
   const projects: Project[] = data.projects;
 
   // Check if it works
-  console.log("Attempting fetch projects from Sanity", projects);
+  // console.log("Attempting fetch projects from Sanity", projects);
 
   return projects; 
 }
