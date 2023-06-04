@@ -42,23 +42,23 @@ export default function Home({
 
       <Header />
       <section id="hero" className="snap-start">
-        <Hero />
+        <Hero pageInfo={pageInfo} />
       </section>
       <section id="about" className="snap-center">
-        <About />
+        <About pageInfo={pageInfo} />
       </section>
       <section id="experience" className="snap-center">
-        <WorkExperience />
+        <WorkExperience experiences={experiences} />
       </section>
       <section id="skills" className="snap-start">
-        <Skills />
+        <Skills skills={skills} />
       </section>
       <section id="projects" className="snap-center">
-        <Projects />
+        <Projects projects={projects} />
       </section>
       {/* Contact Me */}
       <section id="contact" className="snap-center">
-        <Contacts />
+        <Contacts socials={socials} />
       </section>
 
       <Link href="#hero">

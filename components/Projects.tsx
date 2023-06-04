@@ -1,10 +1,13 @@
 import { motion } from "framer-motion";
 import React from "react";
+import { Project } from "@/typings";
+import { urlFor } from "@/sanity";
 
-type Props = {};
+type Props = {
+  projects: Project[];
+};
 
-export default function Projects({}: Props) {
-  const projects = [1, 2, 3, 4, 5, 6, 7];
+export default function Projects({projects}: Props) {
   return (
     <motion.div
       initial={{
@@ -23,20 +26,26 @@ export default function Projects({}: Props) {
       </h3>
       <div className="relative z-20 flex w-full snap-x snap-mandatory overflow-y-hidden overflow-x-scroll scrollbar-thin scrollbar-track-gray-400/20 scrollbar-thumb-white/80 md:mt-40">
         {/* Projects */}
-        {projects.map((project, index) => (
+        {projects?.map((project) => (
           <div className="flex h-screen w-screen md:w-[1000px] flex-shrink-0 snap-center flex-col items-center justify-center space-y-5 p-20 md:p-44">
             <img
-              src="https://t4.ftcdn.net/jpg/00/59/96/75/360_F_59967553_9g2bvhTZf18zCmEVWcKigEoevGzFqXzq.jpg"
+            className="h-96 w-96 object-cover object-center"
+              src={urlFor(project?.image).url()}
               alt="test"
             />
             <div className="max-w-6xl space-y-10 px-0 md:px-10">
               <h4 className="text-center text-4xl font-semibold">
-                <span className="">
-                  Case Study {index + 1} of {projects.length}:
-                </span>{" "}
-                test
+                
+                  {project.title}
+                  
+                
               </h4>
-              <p className="text-center text-lg md:text-left">testing</p>
+              <div className="flex items-center justify-center space-x-4">
+              {project.technologies?.map(technology => (
+                <img className="h-10 w-10 rounded-full" key={technology._id} src={urlFor(technology.image).url()} alt="Technologies" />
+              ))}
+              </div>
+              <p className="text-center text-lg md:text-left">{project.summary}</p>
             </div>
           </div>
         ))}
