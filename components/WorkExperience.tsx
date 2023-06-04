@@ -24,7 +24,7 @@ function WorkExperience({ experiences }: Props) {
       <h3 className="absolute top-24 text-2xl uppercase tracking-[20px] text-gray-500">
         Experience
       </h3>
-      <div className="-p-10 mt-40 flex w-full snap-x snap-mandatory space-x-5 overflow-y-hidden overflow-x-scroll scrollbar-thin scrollbar-track-gray-400/20 scrollbar-thumb-white/80">
+      <div className="mt-32 flex w-full snap-x snap-mandatory space-x-5 overflow-y-hidden overflow-x-scroll p-10 scrollbar-thin scrollbar-track-gray-400/20 scrollbar-thumb-white/80">
         {experiences?.map((experience) => (
           <ExperienceContainer key={experience._id} experience={experience} />
         ))}

@@ -12,7 +12,7 @@ type Props = {
 
 function Hero({ pageInfo }: Props) {
   const [text, count] = useTypewriter({
-    words: ["Fullstack Web Developer", "UI/UX Designer"],
+    words: ["Full-stack Web Developer", "UI/UX Designer"],
     loop: true,
     delaySpeed: 2000,
   });

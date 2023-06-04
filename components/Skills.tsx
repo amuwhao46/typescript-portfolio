@@ -24,10 +24,8 @@ export default function Skills({ skills }: Props) {
       <h3 className="absolute top-24 text-2xl uppercase tracking-[20px] text-gray-500">
         Skills
       </h3>
-      <h3 className="absolute top-36 text-sm uppercase tracking-[3px] text-gray-500">
-        Better words here
-      </h3>
-      <div className="grid grid-cols-3 gap-5 md:grid-cols-4">
+
+      <div className="grid grid-cols-3 gap-3 md:grid-cols-4 md:gap-8 xl:gap-10">
         {skills?.map((skill) => (
           <ItemSkill key={skill._id} skill={skill} />
         ))}

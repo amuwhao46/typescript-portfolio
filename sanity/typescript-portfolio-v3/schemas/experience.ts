@@ -19,9 +19,9 @@ export default defineType({
       },
     },
     {
-      name: 'company',
-      title: 'Company',
-      type: 'text',
+      name: 'companyPosition',
+      title: 'CompanyPosition',
+      type: 'string',
     },
     {
       name: 'dateStarted',
@@ -30,7 +30,7 @@ export default defineType({
     },
     {
       name: 'dateEnded',
-      title: 'DatEnded',
+      title: 'DateEnded',
       type: 'date',
     },
     {
