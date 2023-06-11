@@ -58,7 +58,7 @@ export default function Home({
       </section>
       {/* Contact Me */}
       <section id="contact" className="snap-center">
-        <Contacts socials={socials} pageInfo={pageInfo} />
+        <Contacts socials={socials} />
       </section>
 
       <Link href="#hero">

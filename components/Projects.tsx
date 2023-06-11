@@ -41,7 +41,7 @@ export default function Projects({ projects }: Props) {
                 target="_blank"
                 rel="noopener noreferrer"
               >
-                <h4 className="text-center text-4xl font-semibold ">
+                <h4 className="text-center text-4xl font-semibold hover:text-gray-300 transition-colors ease-in-out">
                   {project.title}
                 </h4>
               </Link>
