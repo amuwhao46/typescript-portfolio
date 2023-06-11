@@ -2,6 +2,7 @@ import { motion } from "framer-motion";
 import React from "react";
 import { Project } from "@/typings";
 import { urlFor } from "@/sanity";
+import Link from "next/link";
 
 type Props = {
   projects: Project[];
@@ -19,25 +20,31 @@ export default function Projects({ projects }: Props) {
       whileInView={{
         opacity: 1,
       }}
-      className="relative z-0 mx-auto flex h-screen max-w-full flex-col items-center justify-evenly overflow-hidden text-left md:flex-row"
+      className="relative z-0 mx-auto flex h-full max-w-full flex-col items-center justify-evenly overflow-hidden text-left md:flex-row"
     >
       <h3 className="absolute top-24 text-2xl uppercase tracking-[20px] text-gray-500">
         Projects
       </h3>
-      <div className="relative z-20 flex w-full snap-x snap-mandatory overflow-y-hidden overflow-x-scroll scrollbar-thin scrollbar-track-gray-400/20 scrollbar-thumb-white/80 md:mt-40">
+      <div className="relative z-20 flex w-full snap-x snap-mandatory overflow-y-hidden overflow-x-scroll scrollbar-thin scrollbar-track-gray-400/20 scrollbar-thumb-white/80">
         {/* Projects */}
         {projects?.map((project) => (
-          <div className="flex h-screen w-screen flex-shrink-0 snap-center flex-col items-center justify-center space-y-5 p-20 md:w-[1000px] md:p-44">
+          <div className="mt-32 flex h-screen w-screen flex-shrink-0 snap-center flex-col items-center justify-center space-y-5 rounded-lg p-10 md:w-[1000px] md:p-16">
             <img
-              className="h-96 w-96 object-cover object-center"
+              className="h-72 w-72 object-contain object-center md:h-96 md:w-96"
               key={project._id}
               src={urlFor(project?.image).url()}
               alt="test"
             />
-            <div className="max-w-6xl space-y-10 px-0 md:px-10">
-              <h4 className="text-center text-4xl font-semibold">
-                {project.title}
-              </h4>
+            <div className="max-w-6xl space-y-6 px-0 md:space-y-10 md:px-10">
+              <Link
+                href={project.linkToBuild}
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                <h4 className="text-center text-4xl font-semibold ">
+                  {project.title}
+                </h4>
+              </Link>
               <div className="flex items-center justify-center space-x-4">
                 {project.technologies?.map((technology) => (
                   <img

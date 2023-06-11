@@ -9,7 +9,7 @@ type Props = {
 
 export default function ExperienceContainer({ experience }: Props) {
   return (
-    <article className="h-100 flex w-screen flex-shrink-0 cursor-pointer snap-center flex-col items-center space-y-7 overflow-hidden overflow-y-auto rounded-lg bg-gray-700 p-10 opacity-40 transition-opacity duration-200 scrollbar-thin scrollbar-track-gray-400/20 scrollbar-thumb-white/80 hover:opacity-100 md:w-[600px] xl:w-[900px]">
+    <article className="flex w-screen flex-shrink-0 cursor-pointer snap-center flex-col items-center space-y-7 overflow-hidden overflow-y-auto rounded-lg bg-gray-700 p-10 opacity-40 transition-opacity duration-200 scrollbar-thin scrollbar-track-gray-400/20 scrollbar-thumb-white/80 hover:opacity-100 md:w-[600px] xl:w-[900px]">
       <motion.img
         initial={{
           y: -100,
@@ -26,9 +26,13 @@ export default function ExperienceContainer({ experience }: Props) {
         alt="Company image"
       />
       <div className="px-0 md:px-10">
-        <h4 className="text-4xl font-light">{experience?.jobTitle}</h4>
-        <p className="mt-1 text-2xl font-bold">{experience.companyPosition}</p>
-        <p className="py-5 uppercase text-gray-300">
+        <h4 className="text-center text-4xl font-light md:text-left">
+          {experience?.jobTitle}
+        </h4>
+        <p className="mt-1 text-center text-2xl font-bold md:text-left">
+          {experience.companyPosition}
+        </p>
+        <p className="py-5 text-center uppercase text-gray-300 md:text-left">
           {new Date(experience.dateStarted).toDateString()} -{" "}
           {experience.isCurrentlyWorkingHere
             ? "PRESENT"

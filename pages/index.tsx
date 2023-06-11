@@ -41,13 +41,13 @@ export default function Home({
       </Head>
 
       <Header />
-      <section id="hero" className="snap-start">
+      <section id="hero" className="snap-center">
         <Hero pageInfo={pageInfo} />
       </section>
-      <section id="about" className="snap-center">
+      <section id="about" className="snap-start">
         <About pageInfo={pageInfo} />
       </section>
-      <section id="experience" className="snap-center">
+      <section id="experience" className="snap-start">
         <WorkExperience experiences={experiences} />
       </section>
       <section id="skills" className="snap-start">
@@ -92,7 +92,9 @@ export const getStaticProps: GetStaticProps<Props> = async () => {
       socials,
     },
 
-    // Regenerates the page every 24 hours
-    revalidate: 86400,
+    // Next.js will attempt to re-generate the page:
+    // - When a request comes in
+    // - At most once every day
+    revalidate: 86400, // In seconds
   };
 };

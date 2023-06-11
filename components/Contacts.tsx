@@ -2,6 +2,7 @@ import React from "react";
 import { EnvelopeIcon, PhoneIcon } from "@heroicons/react/24/solid";
 import { SocialIcon } from "react-social-icons";
 import { PageInfo, Social } from "@/typings";
+import { motion } from "framer-motion";
 
 type Props = {
   socials: Social[];
@@ -10,7 +11,18 @@ type Props = {
 
 export default function Contacts({ socials, pageInfo }: Props) {
   return (
-    <div className="relative mx-auto flex h-screen max-w-7xl flex-col items-center justify-evenly px-10 text-center md:flex-row md:text-left">
+    <motion.div
+      initial={{
+        opacity: 0,
+      }}
+      transition={{
+        duration: 1.5,
+      }}
+      whileInView={{
+        opacity: 1,
+      }}
+      className="relative mx-auto flex h-screen max-w-7xl flex-col items-center justify-evenly px-10 text-center md:flex-row md:text-left"
+    >
       <h3 className="absolute top-24 text-2xl uppercase tracking-[20px] text-gray-500">
         Contact
       </h3>
@@ -26,12 +38,13 @@ export default function Contacts({ socials, pageInfo }: Props) {
             <SocialIcon
               bgColor="transparent"
               fgColor="white"
+              key={social._id}
               url={social.url}
               style={{ height: 70, width: 70 }}
             />
           ))}
         </div>
       </div>
-    </div>
+    </motion.div>
   );
 }

@@ -29,7 +29,7 @@ function Hero({ pageInfo }: Props) {
         <h2 className="text-lg tracking-widest text-gray-300">
           Oke-Oghene Amuwha
         </h2>
-        <h1 className="text-xl font-bold tracking-widest text-white md:text-3xl md:tracking-[10px]">
+        <h1 className="text-xl font-bold tracking-widest text-white md:text-4xl md:tracking-[10px]">
           <span>{text}</span>
           <Cursor />
         </h1>
