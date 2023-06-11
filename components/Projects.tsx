@@ -28,7 +28,7 @@ export default function Projects({ projects }: Props) {
       <div className="relative z-20 flex w-full snap-x snap-mandatory overflow-y-hidden overflow-x-scroll scrollbar-thin scrollbar-track-gray-400/20 scrollbar-thumb-white/80">
         {/* Projects */}
         {projects?.map((project) => (
-          <div className="mt-32 flex h-screen w-screen flex-shrink-0 snap-center flex-col items-center justify-center space-y-5 rounded-lg p-10 md:w-[1000px] md:p-16">
+          <div key={project._id} className="mt-32 flex h-screen w-screen flex-shrink-0 snap-center flex-col items-center justify-center space-y-5 rounded-lg p-10 md:w-[1000px] md:p-16">
             <img
               className="h-72 w-72 object-contain object-center md:h-96 md:w-96"
               key={project._id}
