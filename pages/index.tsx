@@ -77,12 +77,13 @@ export default function Home({
 }
 
 export const getStaticProps: GetStaticProps<Props> = async () => {
-  const pageInfo = await fetchPageInfo();
-  const experiences = await fetchExperiences();
-  const projects = await fetchProjects();
-  const skills = await fetchSkills();
-  const socials = await fetchSocials();
-
+  const [pageInfo, experiences, projects, skills, socials] = await Promise.all([
+    fetchPageInfo(),
+    fetchExperiences(),
+    fetchProjects(),
+    fetchSkills(),
+    fetchSocials(),
+  ]);
   return {
     props: {
       pageInfo,
