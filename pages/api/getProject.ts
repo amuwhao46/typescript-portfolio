@@ -12,12 +12,24 @@ const query = groq`
 
 type Data = {
   projects: Project[];
+  error: string;
 };
 
 export default async function handler(
   req: NextApiRequest,
   res: NextApiResponse<Data>
 ) {
-  const projects: Project[] = await sanityClient.fetch(query);
-  res.status(200).json({ projects });
+  try {
+    const projects: Project[] = await sanityClient.fetch(query);
+    res.status(200).json({
+      projects,
+      error: "",
+    });
+  } catch (error) {
+    console.error("Error fetching projects:", error);
+    res.status(500).json({
+      error: "An error occurred fetching projects",
+      projects: [],
+    });
+  }
 }

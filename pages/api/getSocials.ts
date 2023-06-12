@@ -9,12 +9,24 @@ const query = groq`
 
 type Data = {
   socials: Social[];
+  error: string;
 };
 
 export default async function handler(
   req: NextApiRequest,
   res: NextApiResponse<Data>
 ) {
-  const socials: Social[] = await sanityClient.fetch(query);
-  res.status(200).json({ socials });
+  try {
+    const socials: Social[] = await sanityClient.fetch(query);
+    res.status(200).json({
+      socials,
+      error: "",
+    });
+  } catch (error) {
+    console.error("Error fetching socials:", error);
+    res.status(500).json({
+      error: "An error occurred fetching socials",
+      socials: [],
+    });
+  }
 }
