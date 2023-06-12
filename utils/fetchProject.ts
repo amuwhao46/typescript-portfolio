@@ -1,4 +1,3 @@
-import pageInfo from "@/sanity/schemas/pageInfo";
 import { Project } from "@/typings";
 
 export const fetchProjects = async () => {
