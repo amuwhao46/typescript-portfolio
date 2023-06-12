@@ -1,13 +1,10 @@
 import React from "react";
 import { Cursor, useTypewriter } from "react-simple-typewriter";
 import BackgroundCircles from "./BackgroundCircles";
-import { PageInfo } from "@/typings";
 
-type Props = {
-  pageInfo: PageInfo;
-};
+type Props = {};
 
-function Hero({ pageInfo }: Props) {
+function Hero({}: Props) {
   const [text, count] = useTypewriter({
     words: ["Full-stack Web Developer", "UI/UX Designer"],
     loop: true,

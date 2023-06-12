@@ -42,7 +42,7 @@ export default function Home({
 
       <Header />
       <section id="hero" className="snap-center">
-        <Hero pageInfo={pageInfo} />
+        <Hero />
       </section>
       <section id="about" className="snap-start">
         <About pageInfo={pageInfo} />

@@ -30,13 +30,13 @@ export default function ExperienceContainer({ experience }: Props) {
           {experience?.jobTitle}
         </h4>
         <p className="mt-1 text-center text-2xl font-bold md:text-left">
-          {experience.companyPosition}
+          {experience?.companyPosition}
         </p>
         <p className="py-5 text-center uppercase text-gray-300 md:text-left">
-          {new Date(experience.dateStarted).toDateString()} -{" "}
+          {new Date(experience?.dateStarted).toDateString()} -{" "}
           {experience.isCurrentlyWorkingHere
             ? "PRESENT"
-            : new Date(experience.dateEnded).toDateString()}
+            : new Date(experience?.dateEnded).toDateString()}
         </p>
         <ul className="ml-5 list-disc space-y-4 text-lg">
           {experience.points?.map((point, i) => (

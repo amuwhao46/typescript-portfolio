@@ -31,7 +31,7 @@ export default function Contacts({ socials, pageInfo }: Props) {
         <div className="flex items-center justify-center space-x-5">
           <EnvelopeIcon className="inline-block h-7 w-7 text-white" />
           {/* TODO: Make email open mail client */}
-          <p className="text-2xl">{pageInfo.email}</p>
+          <p className="text-2xl">{pageInfo?.email}</p>
         </div>
         <div className="mx-auto flex flex-row items-center justify-between">
           {socials?.map((social) => (
@@ -39,7 +39,7 @@ export default function Contacts({ socials, pageInfo }: Props) {
               bgColor="transparent"
               fgColor="white"
               key={social._id}
-              url={social.url}
+              url={social?.url}
               style={{ height: 70, width: 70 }}
             />
           ))}
