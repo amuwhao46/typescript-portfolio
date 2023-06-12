@@ -1,6 +1,4 @@
 import React from "react";
-import Image from "next/image";
-import Portrait from "../public/Portrait.jpg";
 import { motion } from "framer-motion";
 import { PageInfo } from "@/typings";
 import { urlFor } from "@/sanity";

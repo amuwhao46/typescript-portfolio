@@ -1,9 +1,6 @@
 import React from "react";
-import Image from "next/image";
-import Portrait from "../public/Portrait.jpg";
 import { Cursor, useTypewriter } from "react-simple-typewriter";
 import BackgroundCircles from "./BackgroundCircles";
-import Link from "next/link";
 import { PageInfo } from "@/typings";
 
 type Props = {
