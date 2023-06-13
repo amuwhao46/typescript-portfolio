@@ -8,8 +8,8 @@ const query = groq`
 `;
 
 type Data = {
-  pageInfo: PageInfo[];
-  error: string;
+  pageInfo?: PageInfo;
+  error?: string;
 };
 
 export default async function handler(
@@ -17,17 +17,15 @@ export default async function handler(
   res: NextApiResponse<Data>
 ) {
   try {
-    const pageInfo: PageInfo[] = await sanityClient.fetch(query);
+    const pageInfo: PageInfo = await sanityClient.fetch(query);
     res.status(200).json({
       pageInfo,
-      error: ""
     });
     
   } catch (error) {
     console.error("Error fetching pageInfo:", error);
     res.status(500).json({
       error: "An error occurred fetching pageInfo",
-      pageInfo: [],
     });
   }
 }

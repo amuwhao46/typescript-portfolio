@@ -11,8 +11,8 @@ const query = groq`
 `;
 
 type Data = {
-  projects: Project[];
-  error: string;
+  projects?: Project[];
+  error?: string;
 };
 
 export default async function handler(
@@ -23,13 +23,11 @@ export default async function handler(
     const projects: Project[] = await sanityClient.fetch(query);
     res.status(200).json({
       projects,
-      error: "",
     });
   } catch (error) {
     console.error("Error fetching projects:", error);
     res.status(500).json({
       error: "An error occurred fetching projects",
-      projects: [],
     });
   }
 }
