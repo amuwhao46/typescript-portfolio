@@ -1,51 +1,51 @@
-import {defineField, defineType} from 'sanity'
+import { defineField, defineType } from "sanity";
 
 export default defineType({
-  name: 'pageInfo',
-  title: 'PageInfo',
-  type: 'document',
+  name: "pageInfo",
+  title: "PageInfo",
+  type: "document",
   fields: [
     {
-      name: 'name',
-      title: 'Name',
-      type: 'string',
+      name: "name",
+      title: "Name",
+      type: "string",
     },
     {
-      name: 'role',
-      title: 'Role',
-      type: 'string',
+      name: "role",
+      title: "Role",
+      type: "string",
     },
     {
-      name: 'heroIcon',
-      title: 'Image',
-      type: 'image',
+      name: "heroImage",
+      title: "Image",
+      type: "image",
       options: {
         hotspot: true,
       },
     },
     {
-      name: 'backgroundInformation',
-      title: 'BackgroundInformation',
-      type: 'string',
+      name: "backgroundInformation",
+      title: "BackgroundInformation",
+      type: "string",
     },
     {
-      name: 'profilePic',
-      title: 'ProfilePic',
-      type: 'image',
+      name: "profilePic",
+      title: "ProfilePic",
+      type: "image",
       options: {
         hotspot: true,
       },
     },
     {
-      name: 'email',
-      title: 'Email',
-      type: 'string',
+      name: "email",
+      title: "Email",
+      type: "string",
     },
     {
-      name: 'socials',
-      title: 'Socials',
-      type: 'array',
-      of: [{type: 'reference', to: {type: 'social'}}],
+      name: "socials",
+      title: "Socials",
+      type: "array",
+      of: [{ type: "reference", to: { type: "social" } }],
     },
   ],
-})
+});

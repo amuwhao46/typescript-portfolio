@@ -15,11 +15,12 @@ interface Image {
 
 export interface PageInfo extends SanityBody {
   _type: "pageInfo";
+  name: string;
+  role: string;
+  heroImage: Image;
   backgroundInformation: string;
   profilePic: Image;
   email: string;
-  role: string;
-  name: string;
 }
 
 export interface Skill extends SanityBody {
@@ -38,8 +39,8 @@ export interface Project extends SanityBody {
   _type: "project";
   title: string;
   image: Image;
-  linkToBuild: string;
   summary: string;
+  linkToBuild: string;
   technologies: Technology[];
 }
 
@@ -48,10 +49,10 @@ export interface Experience extends SanityBody {
   jobTitle: string;
   companyImage: Image;
   companyPosition: string;
-  points: string[];
   dateStarted: string;
   dateEnded: string;
   isCurrentlyWorkingHere: boolean;
+  points: string[];
 }
 
 export interface Social extends SanityBody {

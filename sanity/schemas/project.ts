@@ -25,15 +25,15 @@ export default defineType({
       type: "text",
     },
     {
+      name: "linkToBuild",
+      title: "LinkToBuild",
+      type: "url",
+    },
+    {
       name: "technologies",
       title: "Technologies",
       type: "array",
       of: [{ type: "reference", to: { type: "skill" } }],
-    },
-    {
-      name: "linkToBuild",
-      title: "LinkToBuild",
-      type: "url",
     },
   ],
 });
