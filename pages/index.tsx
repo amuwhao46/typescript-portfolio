@@ -44,7 +44,7 @@ export default function Home({
       <section id="hero" className="snap-center">
         <Hero />
       </section>
-      <section id="about" className="snap-start">
+      {/* <section id="about" className="snap-start">
         <About pageInfo={pageInfo} />
       </section>
       <section id="experience" className="snap-start">
@@ -56,10 +56,9 @@ export default function Home({
       <section id="projects" className="snap-center">
         <Projects projects={projects} />
       </section>
-      {/* Contact Me */}
       <section id="contact" className="snap-center">
         <Contacts socials={socials} pageInfo={pageInfo} />
-      </section>
+      </section> */}
 
       <Link href="#hero">
         <div className="sticky bottom-5 mb-5 w-full animate-bounce cursor-pointer">
