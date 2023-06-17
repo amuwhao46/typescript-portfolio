@@ -5,10 +5,10 @@ import { urlFor } from "@/sanity";
 import Link from "next/link";
 
 type Props = {
-  // projects: Project[];
+  projects: Project[];
 };
 
-export default function Projects({ }: Props) {
+export default function Projects({ projects }: Props) {
   return (
     <motion.div
       initial={{
@@ -26,13 +26,14 @@ export default function Projects({ }: Props) {
         Projects
       </h3>
       <div className="relative z-20 flex w-full snap-x snap-mandatory overflow-y-hidden overflow-x-scroll scrollbar-thin scrollbar-track-gray-400/20 scrollbar-thumb-white/80">
-        {/* {projects?.map((project) => (
+        {/* Projects */}
+        {projects?.map((project) => (
           <div key={project._id} className="mt-32 flex h-screen w-screen flex-shrink-0 snap-center flex-col items-center justify-center space-y-5 rounded-lg p-10 md:w-[1000px] md:p-16">
             <img
               className="h-72 w-72 object-contain object-center md:h-96 md:w-96"
               key={project._id}
               src={urlFor(project?.image).url()}
-              alt="test"
+              alt="Image of project"
             />
             <div className="max-w-6xl space-y-6 px-0 md:space-y-10 md:px-10">
               <Link
@@ -59,22 +60,7 @@ export default function Projects({ }: Props) {
               </p>
             </div>
           </div>
-        ))} */}
-          <div className="flex h-screen w-screen flex-shrink-0 snap-center flex-col items-center justify-center space-y-5 p-20 md:w-[1000px] md:p-44">
-            <img
-              src="https://t4.ftcdn.net/jpg/00/59/96/75/360_F_59967553_9g2bvhTZf18zCmEVWcKigEoevGzFqXzq.jpg"
-              alt="test"
-            />
-            <div className="max-w-6xl space-y-10 px-0 md:px-10">
-              <h4 className="text-center text-4xl font-semibold">
-                <span className="">
-                  Case Study 1 of thing:
-                </span>{" "}
-                test
-              </h4>
-              <p className="text-center text-lg md:text-left">testing</p>
-            </div>
-          </div>
+        ))}
       </div>
       <div className="absolute top-[30%] left-0 h-[500px] w-full -skew-y-12 bg-blue-600/10" />
     </motion.div>

@@ -9,35 +9,55 @@ import Head from "next/head";
 import Link from "next/link";
 import { ArrowSmallUpIcon } from "@heroicons/react/24/solid";
 import Footer from "@/components/Footer";
+import { PageInfo, Experience, Project, Skill, Social } from "@/typings";
+import { GetStaticProps } from "next/types";
+import { fetchExperiences } from "@/utils/fetchExperience";
+import { fetchPageInfo } from "@/utils/fetchPageInfo";
+import { fetchProjects } from "@/utils/fetchProject";
+import { fetchSkills } from "@/utils/fetchSkill";
+import { fetchSocials } from "@/utils/fetchSocials";
 
-export default function Home() {
+type Props = {
+  pageInfo: PageInfo;
+  experiences: Experience[];
+  projects: Project[];
+  skills: Skill[];
+  socials: Social[];
+};
+
+export default function Home({
+  pageInfo,
+  experiences,
+  projects,
+  skills,
+  socials,
+}: Props) {
   return (
-    <div className="z-0 h-screen snap-y snap-proximity overflow-y-scroll overflow-x-hidden scrollbar-thin scrollbar-track-gray-400/20 scrollbar-thumb-white/80 bg-neutral-900 text-white scroll-smooth">
+    <div className="z-0 h-screen snap-y snap-proximity overflow-x-hidden overflow-y-scroll scroll-smooth bg-neutral-900 text-white scrollbar-thin scrollbar-track-gray-400/20 scrollbar-thumb-white/80">
       <Head>
-        <title>Okes Portfolio</title>
+        <title>Oke Amuwha Portfolio</title>
         <meta name="viewport" content="width=device-width, initial-scale=1" />
         <link rel="icon" href="/Favicon_Logo.png" />
       </Head>
 
       <Header />
-      <section id="hero" className="snap-start">
+      <section id="hero" className="snap-center">
         <Hero />
       </section>
-      <section id="about" className="snap-center">
-        <About />
+      <section id="about" className="snap-start">
+        <About pageInfo={pageInfo} />
       </section>
-      <section id="experience" className="snap-center">
-        <WorkExperience />
+      <section id="experience" className="snap-start">
+        <WorkExperience experiences={experiences} />
       </section>
       <section id="skills" className="snap-start">
-        <Skills />
+        <Skills skills={skills} />
       </section>
       <section id="projects" className="snap-center">
-        <Projects />
+        <Projects projects={projects} />
       </section>
-      {/* Contact Me */}
-      <section id="contact" className="snap-start">
-        <Contacts />
+      <section id="contact" className="snap-center">
+        <Contacts socials={socials} pageInfo={pageInfo} />
       </section>
 
       <Link href="#hero">
@@ -54,3 +74,27 @@ export default function Home() {
     </div>
   );
 }
+
+export const getStaticProps: GetStaticProps<Props> = async () => {
+  const [pageInfo, experiences, projects, skills, socials] = await Promise.all([
+    fetchPageInfo(),
+    fetchExperiences(),
+    fetchProjects(),
+    fetchSkills(),
+    fetchSocials(),
+  ]);
+  return {
+    props: {
+      pageInfo,
+      experiences,
+      projects,
+      skills,
+      socials,
+    },
+
+    // Next.js will attempt to re-generate the page:
+    // - When a request comes in
+    // - At most once every day
+    revalidate: 86400, // In seconds
+  };
+};

@@ -4,10 +4,10 @@ import ItemSkill from "./ItemSkill";
 import { Skill } from "@/typings";
 
 type Props = {
-  // skills: Skill[];
+  skills: Skill[];
 };
 
-export default function Skills({ }: Props) {
+export default function Skills({ skills }: Props) {
   return (
     <motion.div
       initial={{
@@ -26,10 +26,10 @@ export default function Skills({ }: Props) {
       </h3>
 
       <div className="grid grid-cols-3 gap-3 md:grid-cols-4 md:gap-8 xl:gap-10">
-        {/* {skills?.map((skill) => (
+        {skills?.map((skill) => (
           <ItemSkill key={skill._id} skill={skill} />
-        ))} */}
-        <ItemSkill />
+        ))}
+        {/* <ItemSkill /> */}
       </div>
     </motion.div>
   );
