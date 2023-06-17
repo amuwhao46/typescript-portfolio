@@ -62,7 +62,7 @@ export default function Projects({ projects }: Props) {
           </div>
         ))}
       </div>
-      <div className="absolute top-[30%] left-0 h-[500px] w-full -skew-y-12 bg-blue-600/10" />
+      <div className="absolute top-[30%] left-0 h-[500px] w-full -skew-y-12 bg-neutral-900/10" />
     </motion.div>
   );
 }

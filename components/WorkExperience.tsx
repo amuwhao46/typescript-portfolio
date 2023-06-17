@@ -13,11 +13,11 @@ function WorkExperience({ experiences }: Props) {
       initial={{
         opacity: 0,
       }}
-      transition={{
-        duration: 1.5,
-      }}
       whileInView={{
         opacity: 1,
+      }}
+      transition={{
+        duration: 1.5,
       }}
       className="relative mx-auto flex h-full max-w-full flex-col items-center justify-evenly overflow-hidden px-5 text-left md:flex-row"
     >
