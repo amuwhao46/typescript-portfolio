@@ -33,7 +33,7 @@ export default function Home({
   socials,
 }: Props) {
   return (
-    <div className="z-0 h-screen snap-y overflow-x-hidden overflow-y-scroll scroll-smooth bg-neutral-900 text-white scrollbar-thin scrollbar-track-gray-400/20 scrollbar-thumb-white/80">
+    <div className="z-0 h-screen overflow-x-hidden overflow-y-scroll scroll-smooth bg-neutral-900 text-white scrollbar-thin scrollbar-track-gray-400/20 scrollbar-thumb-white/80">
       <Head>
         <title>Oke Amuwha Portfolio</title>
         <meta name="viewport" content="width=device-width, initial-scale=1" />
@@ -41,27 +41,27 @@ export default function Home({
       </Head>
 
       <Header />
-      <section id="hero">
+      <section>
         <Hero />
       </section>
-      <section id="about" className="snap-start">
+      <section>
         <About pageInfo={pageInfo} />
       </section>
-      <section id="experience" className="snap-start">
+      <section>
         <WorkExperience experiences={experiences} />
       </section>
-      <section id="skills" className="snap-start">
+      <section>
         <Skills skills={skills} />
       </section>
-      <section id="projects" className="snap-start">
+      <section>
         <Projects projects={projects} />
       </section>
-      <section id="contact" className="snap-start">
+      <section>
         <Contacts socials={socials} pageInfo={pageInfo} />
       </section>
 
       <Link href="#hero">
-        <div className="sticky bottom-10 md:bottom-5 md:mb-5 w-full animate-bounce cursor-pointer">
+        <div className="sticky bottom-10 w-full animate-bounce cursor-pointer md:bottom-5 md:mb-5">
           <div className="flex items-center justify-center">
             <ArrowSmallUpIcon className="h-10 w-10 rounded-full bg-neutral-800/60 p-2 backdrop-blur" />
           </div>

@@ -13,7 +13,8 @@ function About({ pageInfo }: Props) {
       initial={{ opacity: 0 }}
       whileInView={{ opacity: 1 }}
       transition={{ duration: 1.5 }}
-      className="relative mx-auto flex h-full md:h-screen max-w-7xl flex-col items-center justify-evenly px-5 text-center md:flex-row md:space-y-1 md:px-20 md:text-left"
+      id="about"
+      className="relative mx-auto flex h-full max-w-7xl flex-col items-center justify-evenly px-5 text-center md:h-screen md:flex-row md:space-y-1 md:px-20 md:text-left"
     >
       <h3 className="absolute top-24 text-lg uppercase tracking-[20px] text-gray-500 md:text-2xl">
         About

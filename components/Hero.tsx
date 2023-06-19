@@ -15,7 +15,10 @@ function Hero({}: Props) {
   });
 
   return (
-    <div className="flex h-screen flex-col items-center justify-center space-y-10 overflow-hidden text-center">
+    <div
+      id="hero"
+      className="flex h-screen flex-col items-center justify-center space-y-10 overflow-hidden text-center"
+    >
       <BackgroundCircles />
       <motion.div
         className="z-10"
