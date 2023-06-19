@@ -29,10 +29,11 @@ export default function Contacts({ socials, pageInfo }: Props) {
       </h3>
       <div className="flex flex-col space-y-10">
         <h4 className="text-center text-4xl font-semibold">Get in touch</h4>
-        <div className="flex items-center justify-center space-x-5">
+        <div className="flex items-center justify-center space-x-3 md:space-x-5">
           <EnvelopeIcon className="inline-block h-7 w-7 text-white" />
-          {/* TODO: Make email open mail client */}
-          <p className="text-2xl">{pageInfo?.email}</p>
+          <a href="mailto: amuwhao46@gmail.com" rel="noreferrer">
+            <p className="text-2xl hover:text-gray-300">{pageInfo?.email}</p>
+          </a>
         </div>
         <div className="mx-auto flex flex-row items-center justify-between">
           {socials?.map((social) => (

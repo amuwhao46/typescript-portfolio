@@ -41,36 +41,36 @@ export default function Home({
       </Head>
 
       <Header />
-      <section>
+      <div>
         <Hero />
-      </section>
-      <section>
+      </div>
+      <div>
         <About pageInfo={pageInfo} />
-      </section>
-      <section>
+      </div>
+      <div>
         <WorkExperience experiences={experiences} />
-      </section>
-      <section>
+      </div>
+      <div>
         <Skills skills={skills} />
-      </section>
-      <section>
+      </div>
+      <div>
         <Projects projects={projects} />
-      </section>
-      <section>
+      </div>
+      <div>
         <Contacts socials={socials} pageInfo={pageInfo} />
-      </section>
+      </div>
 
       <Link href="#hero">
-        <div className="sticky bottom-10 w-full animate-bounce cursor-pointer md:bottom-5 md:mb-5">
+        <div className="sticky w-full animate-bounce cursor-pointer bottom-5 mb-5">
           <div className="flex items-center justify-center">
             <ArrowSmallUpIcon className="h-10 w-10 rounded-full bg-neutral-800/60 p-2 backdrop-blur" />
           </div>
         </div>
       </Link>
 
-      <section className="snap-end">
+      <div>
         <Footer />
-      </section>
+      </div>
     </div>
   );
 }
