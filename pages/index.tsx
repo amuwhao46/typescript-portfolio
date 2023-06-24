@@ -33,7 +33,7 @@ export default function Home({
   socials,
 }: Props) {
   return (
-    <div className="z-0 h-screen overflow-x-hidden scroll-smooth bg-neutral-900 text-white scrollbar-thin scrollbar-track-gray-400/20 scrollbar-thumb-white/80">
+    <div className="z-0 h-screen overflow-x-hidden scroll-smooth bg-gray-200 dark:bg-black dark:text-gray-100">
       <Head>
         <title>Oke Amuwha Portfolio</title>
         <meta name="viewport" content="width=device-width, initial-scale=1" />
@@ -41,36 +41,28 @@ export default function Home({
       </Head>
 
       <Header />
-      <div>
-        <Hero />
-      </div>
-      <div>
-        <About pageInfo={pageInfo} />
-      </div>
-      <div>
-        <WorkExperience experiences={experiences} />
-      </div>
-      <div>
-        <Skills skills={skills} />
-      </div>
-      <div>
-        <Projects projects={projects} />
-      </div>
-      <div>
-        <Contacts socials={socials} pageInfo={pageInfo} />
-      </div>
+
+      <Hero />
+
+      <About pageInfo={pageInfo} />
+
+      <WorkExperience experiences={experiences} />
+
+      <Skills skills={skills} />
+
+      <Projects projects={projects} />
+
+      {/* <Contacts socials={socials} pageInfo={pageInfo} /> */}
 
       <Link href="#hero">
-        <div className="sticky w-full animate-bounce cursor-pointer bottom-5 mb-5">
+        <div className="sticky bottom-5 mb-5 w-full animate-bounce cursor-pointer">
           <div className="flex items-center justify-center">
-            <ArrowSmallUpIcon className="h-10 w-10 rounded-full bg-neutral-800/60 p-2 backdrop-blur" />
+            <ArrowSmallUpIcon className="h-10 w-10 rounded-full bg-neutral-800/60 fill-white p-2 backdrop-blur" />
           </div>
         </div>
       </Link>
 
-      <div>
-        <Footer />
-      </div>
+      <Footer />
     </div>
   );
 }

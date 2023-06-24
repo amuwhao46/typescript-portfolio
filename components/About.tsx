@@ -14,11 +14,11 @@ function About({ pageInfo }: Props) {
       whileInView={{ opacity: 1 }}
       transition={{ duration: 1.5 }}
       id="about"
-      className="relative mx-auto flex h-full max-w-7xl flex-col items-center justify-evenly overflow-hidden px-5 text-center md:h-screen md:flex-row md:space-y-1 md:px-20 md:text-left"
+      className="relative mx-auto rounded-2xl flex max-w-7xl flex-col items-center justify-evenly bg-white dark:bg-neutral-900 px-5 text-center md:h-screen md:flex-row md:space-y-1 md:px-20 md:text-left"
     >
-      <h3 className="absolute top-24 text-2xl uppercase tracking-[20px] text-gray-500">
-        About
-      </h3>
+      <h4 className="absolute top-20 text-2xl font-semibold md:text-4xl">
+        Some <span className="text-orange-400">background</span> info
+      </h4>
       <motion.img
         initial={{
           x: -100,
@@ -33,12 +33,9 @@ function About({ pageInfo }: Props) {
         }}
         viewport={{ once: true }}
         src={urlFor(pageInfo?.profilePic).url()}
-        className="mt-40 h-32 w-32 flex-shrink-0 rounded-full object-cover md:mb-0 md:h-96 md:w-64 md:rounded-lg xl:h-[400px] xl:w-[300px]"
+        className="mt-40 mb-5 h-32 w-32 rounded-full object-cover md:mb-0 md:h-96 md:w-64 md:rounded-lg xl:h-[400px] xl:w-[300px]"
       />
-      <div className="space-y-6 px-0 md:space-y-10 md:px-10">
-        <h4 className="mt-5 text-2xl font-semibold md:text-4xl">
-          Some background info
-        </h4>
+      <div className="space-y-6 px-0 pb-5 md:space-y-10 md:px-10">
         <p>{pageInfo?.backgroundInformation}</p>
       </div>
     </motion.div>
