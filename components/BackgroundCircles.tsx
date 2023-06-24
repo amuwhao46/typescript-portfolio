@@ -17,10 +17,9 @@ function BackgroundCircles({}: Props) {
       }}
       className="relative flex items-center justify-center"
     >
-      <div className="absolute mt-40 h-[125px] w-[125px] rotate-45 animate-pulse rounded-lg border border-orange-400" />
-      <div className="absolute mt-40 h-[250px] w-[250px] rotate-45 animate-pulse rounded-lg border border-yellow-400" />
-      <div className="absolute mt-40 h-[375px] w-[375px] rotate-45 animate-pulse rounded-lg border border-orange-400" />
-      <div className="absolute mt-40 h-[500px] w-[500px] rotate-45 animate-pulse rounded-lg border border-yellow-400" />
+      <div className="absolute top-0 -left-4 h-72 w-72 animate-blob rounded-full bg-orange-400 opacity-80 mix-blend-multiply blur-2xl filter ease-in-out" />
+      <div className="animation-delay-2000 absolute top-0 -right-4 h-72 w-72 animate-blob rounded-full bg-red-400 opacity-80 mix-blend-multiply blur-2xl filter ease-in-out" />
+      <div className="animation-delay-4000 absolute -top-12 h-72 w-72 animate-blob rounded-full bg-yellow-400 opacity-80 mix-blend-multiply blur-2xl filter ease-in-out" />
     </motion.div>
   );
 }

@@ -32,7 +32,7 @@ function Hero({}: Props) {
           alt="Logo"
           className="relative mx-auto object-cover"
         />
-        <h2 className="text-lg tracking-widest text-orange-500">
+        <h2 className="text-lg tracking-widest text-black">
           Oke-Oghene Amuwha
         </h2>
         <h1 className="text-xl font-bold tracking-widest text-black dark:text-white md:text-4xl">

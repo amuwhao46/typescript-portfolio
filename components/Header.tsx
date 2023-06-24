@@ -11,8 +11,8 @@ export default function Header({}: Props) {
     setNavbar(!navbar);
   };
   return (
-    <header className="sticky top-0 z-50 items-start">
-      <nav className="flex-center inset-x-0 flex flex-wrap justify-between  p-5 shadow-lg backdrop-blur ">
+    <header>
+      <nav className="flex-center fixed inset-x-0 z-50 flex flex-wrap justify-between p-5 shadow-lg backdrop-blur">
         <Link href="#hero">
           <div className="mr-6 flex flex-shrink-0 items-center space-x-2 rounded-3xl px-2 text-black dark:bg-neutral-100">
             <div className="">
