@@ -14,7 +14,7 @@ export default function Header({}: Props) {
     <header className="sticky top-0 z-50 items-start">
       <nav className="flex-center inset-x-0 flex flex-wrap justify-between  p-5 shadow-lg backdrop-blur ">
         <Link href="#hero">
-          <div className="mr-6 flex flex-shrink-0 items-center space-x-2 rounded-3xl px-2 text-black dark:bg-gray-100">
+          <div className="mr-6 flex flex-shrink-0 items-center space-x-2 rounded-3xl px-2 text-black dark:bg-neutral-100">
             <div className="">
               <Image src={Logo} width={30} alt="My logo" className="" />
             </div>
@@ -26,7 +26,7 @@ export default function Header({}: Props) {
         <div className="block md:hidden">
           <button
             onClick={handleOnClick}
-            className="flex items-center rounded border border-orange-400 px-3 py-2 text-orange-400 transition-colors hover:border-orange-200 hover:text-orange-200"
+            className="flex items-center rounded border border-orange-500 px-3 py-2 text-orange-500 transition-colors hover:border-orange-200 hover:text-orange-200"
           >
             <svg
               className="h-3 w-3 fill-current"
@@ -89,7 +89,7 @@ export default function Header({}: Props) {
               href="files/Oke-Oghene_Amuwha_Resume.pdf"
               target="_blank"
               rel="noopener noreferrer"
-              className="mt-4 inline-block rounded border border-orange-400 px-4 py-2 text-sm leading-none text-orange-400 transition-colors hover:border-transparent hover:bg-orange-400 hover:text-black md:mt-0"
+              className="mt-4 inline-block rounded border border-orange-500 px-4 py-2 text-sm leading-none text-orange-500 transition-colors hover:border-transparent hover:bg-orange-500 hover:text-black md:mt-0"
             >
               Resume
             </Link>

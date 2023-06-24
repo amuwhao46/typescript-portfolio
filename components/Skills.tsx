@@ -20,10 +20,10 @@ export default function Skills({ skills }: Props) {
         opacity: 1,
       }}
       id="skills"
-      className="relative mx-auto mt-32 bg-white dark:bg-neutral-900 flex min-h-[850px] max-w-7xl rounded-2xl items-center justify-center overflow-hidden xl:flex-row xl:space-y-0 xl:px-10"
+      className="relative mx-auto mt-32 flex min-h-[850px] max-w-7xl items-center justify-center rounded-2xl bg-white dark:bg-neutral-800 xl:flex-row xl:space-y-0 xl:px-10"
     >
       <h1 className="absolute top-20 text-2xl font-semibold md:text-4xl">
-        The <span className="text-orange-400">Skills</span> I've Learned
+        The <span className="text-orange-500">Skills</span> I've Learned
       </h1>
 
       <div className="grid grid-cols-3 gap-3 md:grid-cols-4 md:gap-8 xl:gap-10">
