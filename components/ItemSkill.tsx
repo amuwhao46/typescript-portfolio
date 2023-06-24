@@ -9,7 +9,7 @@ type Props = {
 
 export default function ItemSkill({ skill }: Props) {
   return (
-    <div className="group relative flex">
+    <div className="group  flex">
       <motion.img
         initial={{
           opacity: 0,

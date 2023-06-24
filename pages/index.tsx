@@ -52,7 +52,7 @@ export default function Home({
 
       <Projects projects={projects} />
 
-      {/* <Contacts socials={socials} pageInfo={pageInfo} /> */}
+      <Contacts socials={socials} pageInfo={pageInfo} />
 
       <Link href="#hero">
         <div className="sticky bottom-5 mb-5 w-full animate-bounce cursor-pointer">

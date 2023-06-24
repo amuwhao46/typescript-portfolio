@@ -20,12 +20,12 @@ function WorkExperience({ experiences }: Props) {
         duration: 1.5,
       }}
       id="experience"
-      className="relative mx-auto flex h-full max-w-full flex-col items-center justify-evenly overflow-hidden px-5 text-left md:flex-row"
+      className="relative mx-auto flex max-w-7xl flex-col items-center justify-evenly overflow-hidden px-2 text-left md:flex-row lg:px-0"
     >
-      <h3 className="absolute top-24 text-2xl uppercase tracking-[20px] text-gray-500">
-        Experience
-      </h3>
-      <div className="mt-32 flex w-full snap-x snap-mandatory space-x-5 overflow-x-scroll p-10 scrollbar-thin scrollbar-track-gray-400/20 scrollbar-thumb-orange-400/80">
+      <h4 className="absolute top-20 text-2xl font-semibold md:text-4xl">
+        My Work <span className="text-orange-400">Experience</span>
+      </h4>
+      <div className="mt-40 flex w-full snap-x snap-mandatory space-x-5 overflow-x-scroll rounded-2xl pb-5 scrollbar-thin scrollbar-track-gray-400/20 scrollbar-thumb-orange-400/80">
         {experiences?.map((experience) => (
           <ExperienceContainer key={experience._id} experience={experience} />
         ))}

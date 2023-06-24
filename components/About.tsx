@@ -14,11 +14,11 @@ function About({ pageInfo }: Props) {
       whileInView={{ opacity: 1 }}
       transition={{ duration: 1.5 }}
       id="about"
-      className="relative mx-auto rounded-2xl flex max-w-7xl flex-col items-center justify-evenly bg-white dark:bg-neutral-900 px-5 text-center md:h-screen md:flex-row md:space-y-1 md:px-20 md:text-left"
+      className="relative mx-auto flex max-w-7xl flex-col items-center justify-evenly rounded-2xl bg-white px-5 text-center dark:bg-neutral-900 md:h-screen md:flex-row md:space-y-1 md:px-20 md:text-left"
     >
-      <h4 className="absolute top-20 text-2xl font-semibold md:text-4xl">
-        Some <span className="text-orange-400">background</span> info
-      </h4>
+      <h1 className="absolute top-20 text-2xl font-semibold md:text-4xl">
+        Some <span className="text-orange-400">Background</span> Info
+      </h1>
       <motion.img
         initial={{
           x: -100,
@@ -35,7 +35,7 @@ function About({ pageInfo }: Props) {
         src={urlFor(pageInfo?.profilePic).url()}
         className="mt-40 mb-5 h-32 w-32 rounded-full object-cover md:mb-0 md:h-96 md:w-64 md:rounded-lg xl:h-[400px] xl:w-[300px]"
       />
-      <div className="space-y-6 px-0 pb-5 md:space-y-10 md:px-10">
+      <div className="space-y-6 px-0 pb-10 md:space-y-10 md:px-10">
         <p>{pageInfo?.backgroundInformation}</p>
       </div>
     </motion.div>

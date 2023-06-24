@@ -14,15 +14,9 @@ export default function Header({}: Props) {
     <header className="sticky top-0 z-50 items-start">
       <nav className="flex-center inset-x-0 flex flex-wrap justify-between  p-5 shadow-lg backdrop-blur ">
         <Link href="#hero">
-          <div className="mr-6 flex flex-shrink-0 items-center text-black space-x-2 rounded-3xl dark:bg-gray-100 px-2">
+          <div className="mr-6 flex flex-shrink-0 items-center space-x-2 rounded-3xl px-2 text-black dark:bg-gray-100">
             <div className="">
-
-            <Image
-              src={Logo}
-              width={30}
-              alt="My logo"
-              className=""
-            />
+              <Image src={Logo} width={30} alt="My logo" className="" />
             </div>
             <span className="text-2xl font-bold tracking-tight md:text-3xl">
               Oke Amuwha
