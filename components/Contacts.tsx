@@ -22,10 +22,14 @@ export default function Contacts({ socials, pageInfo }: Props) {
         opacity: 1,
       }}
       id="contact"
-      className="relative mx-auto mt-32 flex h-screen max-w-7xl flex-col items-center justify-evenly rounded-2xl bg-white px-10 text-center dark:bg-neutral-800 md:flex-row md:text-left"
+      className="relative z-0 mx-2 mt-32 flex h-screen max-w-7xl flex-col items-center justify-evenly rounded-2xl bg-white px-10 text-center dark:bg-neutral-800 md:mx-auto md:flex-row md:text-left"
     >
       <h1 className="absolute top-20 text-2xl font-semibold md:text-4xl">
-        Ways to <span className="text-orange-500">Contact</span> Me
+        Ways to{" "}
+        <span className=" bg-gradient-to-r from-red-600 to-orange-400 bg-clip-text text-transparent">
+          Contact
+        </span>{" "}
+        Me
       </h1>
       <div className="flex flex-col space-y-10">
         <div className="flex cursor-pointer items-center justify-center space-x-3 rounded-2xl p-5 transition-all hover:bg-gray-100/80 hover:text-orange-400 dark:hover:bg-neutral-700/80 md:space-x-5">

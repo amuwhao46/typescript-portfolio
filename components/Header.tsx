@@ -18,7 +18,7 @@ export default function Header({}: Props) {
             <div className="">
               <Image src={Logo} width={30} alt="My logo" className="" />
             </div>
-            <span className="text-2xl font-bold tracking-tight md:text-3xl">
+            <span className="text-xl font-bold tracking-tight md:text-3xl">
               Oke Amuwha
             </span>
           </div>

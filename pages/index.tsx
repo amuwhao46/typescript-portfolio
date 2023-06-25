@@ -33,7 +33,7 @@ export default function Home({
   socials,
 }: Props) {
   return (
-    <div className="z-0 h-screen overflow-x-hidden scroll-smooth bg-gray-100 scrollbar-thin scrollbar-track-gray-400/20 scrollbar-thumb-orange-500/80 dark:bg-neutral-900 dark:text-gray-100">
+    <div className="h-screen overflow-x-hidden scroll-smooth bg-gray-100 scrollbar-thin scrollbar-track-gray-400/20 scrollbar-thumb-orange-500/80 dark:bg-neutral-900 dark:text-gray-100">
       <Head>
         <title>Oke Amuwha Portfolio</title>
         <meta name="viewport" content="width=device-width, initial-scale=1" />

@@ -21,7 +21,7 @@ function Hero({}: Props) {
     >
       <BackgroundCircles />
       <motion.div
-        className="z-10"
+        className="z-0"
         initial={{ opacity: 0 }}
         whileInView={{ opacity: 1 }}
         transition={{ duration: 1 }}

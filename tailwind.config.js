@@ -18,11 +18,14 @@ module.exports = {
           "0%": {
             transform: "translate(0px, 0px) scale(1)",
           },
-          "33%": {
+          "25%": {
             transform: "translate(30px, -78px) scale(1.2)",
           },
-          "66%": {
-            transform: "translate(-20px, 52px) scale(0.8)",
+          "50%": {
+            transform: "translate(-20px, 52px) scale(1)",
+          },
+          "75%": {
+            transform: "translate(40px, -89px) scale(0.8)",
           },
           "100%": {
             transform: "translate(0px, 0px) scale(1)",
