@@ -62,7 +62,7 @@ export default function Home({
         </div>
       </Link>
 
-      <Footer />
+      {/* <Footer /> */}
     </div>
   );
 }

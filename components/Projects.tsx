@@ -21,12 +21,12 @@ export default function Projects({ projects }: Props) {
         opacity: 1,
       }}
       id="projects"
-      className="relative z-0 mx-auto flex max-w-7xl snap-start flex-col items-center justify-evenly overflow-hidden text-left md:flex-row"
+      className="relative mx-auto flex max-w-7xl snap-start flex-col items-center justify-evenly overflow-hidden text-left md:flex-row"
     >
       <h1 className="absolute top-20 text-2xl font-semibold md:text-4xl">
         Neat <span className="text-orange-500">Projects</span> I&apos;ve made
       </h1>
-      <div className="relative z-20 flex w-full snap-x snap-mandatory overflow-y-hidden overflow-x-scroll scrollbar-thin scrollbar-track-gray-400/20 scrollbar-thumb-orange-500/80">
+      <div className="relative flex w-full snap-x snap-mandatory overflow-y-hidden overflow-x-scroll scrollbar-thin scrollbar-track-gray-400/20 scrollbar-thumb-orange-500/80">
         {/* Projects */}
         {projects?.map((project) => (
           <div
