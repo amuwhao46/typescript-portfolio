@@ -2,11 +2,14 @@
 @tailwind components;
 @tailwind utilities;
 
-@layer components {
-  .heroButton {
-    @apply px-6 py-2 border border-red-400 rounded-full uppercase text-sm tracking-widest text-gray-500 transition-all hover:border-red-400/40 hover:text-gray-500/40
+@layer utilities {
+  .animation-delay-2000 {
+    animation-delay: 2s;
   }
-  .contactInput {
-    @apply outline-none bg-slate-400/20 rounded-sm border-b px-6 py-4 text-gray-500 placeholder-gray-500 transition-all focus:border-green-300/40 focus:text-yellow-300/40 hover:border-red-400/40
+  .animation-delay-4000 {
+    animation-delay: 4s;
+  }
+  .animation-delay-6000 {
+    animation-delay: 6s;
   }
 }

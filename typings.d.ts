@@ -47,6 +47,7 @@ export interface Project extends SanityBody {
 export interface Experience extends SanityBody {
   _type: "experience";
   jobTitle: string;
+  queue: string;
   companyImage: Image;
   companyPosition: string;
   dateStarted: string;

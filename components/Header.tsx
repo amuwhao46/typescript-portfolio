@@ -11,11 +11,13 @@ export default function Header({}: Props) {
     setNavbar(!navbar);
   };
   return (
-    <header className="sticky top-0 z-50 items-start">
-      <nav className="flex-center inset-x-0 flex flex-wrap justify-between bg-neutral-800/50 p-5 shadow-xl backdrop-blur">
+    <header>
+      <nav className="flex-center fixed inset-x-0 z-50 flex flex-wrap justify-between p-5 shadow-lg backdrop-blur">
         <Link href="#hero">
-          <div className="mr-6 flex flex-shrink-0 items-center text-white">
-            <Image src={Logo} width={30} alt="My logo" className="mx-2" />
+          <div className="mr-6 flex flex-shrink-0 items-center space-x-2 rounded-3xl px-2 text-black transition-colors hover:bg-neutral-200 dark:bg-gray-100">
+            <div className="">
+              <Image src={Logo} width={30} alt="My logo" className="" />
+            </div>
             <span className="text-2xl font-bold tracking-tight md:text-3xl">
               Oke Amuwha
             </span>
@@ -24,7 +26,7 @@ export default function Header({}: Props) {
         <div className="block md:hidden">
           <button
             onClick={handleOnClick}
-            className="flex items-center rounded border border-white px-3 py-2 text-white transition-colors hover:border-gray-300 hover:text-gray-200"
+            className="flex items-center rounded border border-orange-500 px-3 py-2 text-orange-500 transition-colors hover:border-orange-200 hover:text-orange-200"
           >
             <svg
               className="h-3 w-3 fill-current"
@@ -46,7 +48,7 @@ export default function Header({}: Props) {
               onClick={handleOnClick}
               href="#about"
               rel="noopener noreferrer"
-              className="mt-4 mr-4 block transition-colors hover:text-gray-300 md:mt-0 md:inline-block"
+              className="mt-4 mr-4 block transition-colors hover:text-orange-400 md:mt-0 md:inline-block"
             >
               About
             </Link>
@@ -54,7 +56,7 @@ export default function Header({}: Props) {
               onClick={handleOnClick}
               href="#experience"
               rel="noopener noreferrer"
-              className="mt-4 mr-4 block transition hover:text-gray-300 md:mt-0 md:inline-block"
+              className="mt-4 mr-4 block transition hover:text-orange-400 md:mt-0 md:inline-block"
             >
               Experience
             </Link>
@@ -62,7 +64,7 @@ export default function Header({}: Props) {
               onClick={handleOnClick}
               href="#skills"
               rel="noopener noreferrer"
-              className="mt-4 mr-4 block transition-colors hover:text-gray-300 md:mt-0 md:inline-block"
+              className="mt-4 mr-4 block transition-colors hover:text-orange-400 md:mt-0 md:inline-block"
             >
               Skills
             </Link>
@@ -70,7 +72,7 @@ export default function Header({}: Props) {
               onClick={handleOnClick}
               href="#projects"
               rel="noopener noreferrer"
-              className="mt-4 mr-4 block transition-colors hover:text-gray-300 md:mt-0 md:inline-block"
+              className="mt-4 mr-4 block transition-colors hover:text-orange-400 md:mt-0 md:inline-block"
             >
               Projects
             </Link>
@@ -78,7 +80,7 @@ export default function Header({}: Props) {
               onClick={handleOnClick}
               href="#contact"
               rel="noopener noreferrer"
-              className="mt-4 mr-4 block transition-colors hover:text-gray-300 md:mt-0 md:inline-block"
+              className="mt-4 mr-4 block transition-colors hover:text-orange-400 md:mt-0 md:inline-block"
             >
               Contact
             </Link>
@@ -87,7 +89,7 @@ export default function Header({}: Props) {
               href="files/Oke-Oghene_Amuwha_Resume.pdf"
               target="_blank"
               rel="noopener noreferrer"
-              className="mt-4 inline-block rounded border border-white px-4 py-2 text-sm leading-none text-white transition-colors hover:border-transparent hover:bg-white hover:text-black md:mt-0"
+              className="mt-4 inline-block rounded border border-orange-500 px-4 py-2 text-sm leading-none text-orange-500 transition-colors hover:border-transparent hover:bg-orange-500 hover:text-black md:mt-0"
             >
               Resume
             </Link>
