@@ -33,7 +33,7 @@ export default function Home({
   socials,
 }: Props) {
   return (
-    <div className="z-0 h-screen overflow-x-hidden scroll-smooth bg-gray-100 dark:bg-neutral-900 dark:text-gray-100 scrollbar-thin scrollbar-track-gray-400/20 scrollbar-thumb-orange-500/80">
+    <div className="z-0 h-screen snap-y snap-proximity overflow-x-hidden scroll-smooth bg-gray-100 scrollbar-thin scrollbar-track-gray-400/20 scrollbar-thumb-orange-500/80 dark:bg-neutral-900 dark:text-gray-100">
       <Head>
         <title>Oke Amuwha Portfolio</title>
         <meta name="viewport" content="width=device-width, initial-scale=1" />
@@ -55,7 +55,7 @@ export default function Home({
       <Contacts socials={socials} pageInfo={pageInfo} />
 
       <Link href="#hero">
-        <div className="sticky bottom-5 mb-5 w-full animate-bounce cursor-pointer z-10">
+        <div className="sticky bottom-5 z-10 mb-5 w-full animate-bounce cursor-pointer">
           <div className="flex items-center justify-center">
             <ArrowSmallUpIcon className="h-10 w-10 rounded-full bg-neutral-800/10 fill-black p-2 backdrop-blur dark:fill-gray-100" />
           </div>

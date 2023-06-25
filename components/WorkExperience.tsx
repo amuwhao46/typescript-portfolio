@@ -20,14 +20,17 @@ function WorkExperience({ experiences }: Props) {
         duration: 1.5,
       }}
       id="experience"
-      className="relative mx-auto flex max-w-7xl flex-col items-center justify-evenly overflow-hidden px-2 text-left md:flex-row lg:px-0"
+      className="relative mx-auto flex max-w-7xl snap-start flex-col items-center justify-evenly overflow-hidden px-2 text-left md:flex-row lg:px-0"
     >
       <h4 className="absolute top-20 text-2xl font-semibold md:text-4xl">
         My Work <span className="text-orange-500">Experience</span>
       </h4>
       <div className="mt-40 flex w-full snap-x snap-mandatory space-x-5 overflow-x-scroll rounded-2xl pb-5 scrollbar-thin scrollbar-track-gray-400/20 scrollbar-thumb-orange-500/80">
         {experiences?.map((experience) => (
-          <ExperienceContainer key={experience?.queue} experience={experience} />
+          <ExperienceContainer
+            key={experience?.queue}
+            experience={experience}
+          />
         ))}
       </div>
     </motion.div>

@@ -21,7 +21,7 @@ export default function Projects({ projects }: Props) {
         opacity: 1,
       }}
       id="projects"
-      className="relative z-0 mx-auto flex max-w-7xl flex-col items-center justify-evenly overflow-hidden text-left md:flex-row"
+      className="relative z-0 mx-auto flex max-w-7xl snap-start flex-col items-center justify-evenly overflow-hidden text-left md:flex-row"
     >
       <h1 className="absolute top-20 text-2xl font-semibold md:text-4xl">
         Neet <span className="text-orange-500">Projects</span> I've made

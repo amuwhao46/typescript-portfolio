@@ -17,7 +17,7 @@ function Hero({}: Props) {
   return (
     <div
       id="hero"
-      className="flex h-screen flex-col items-center justify-center space-y-10  text-center"
+      className="flex h-screen flex-col items-center justify-center space-y-10 text-center"
     >
       <BackgroundCircles />
       <motion.div
@@ -32,10 +32,10 @@ function Hero({}: Props) {
           alt="Logo"
           className="relative mx-auto object-cover"
         />
-        <h2 className="text-lg tracking-widest text-black">
+        <h2 className="text-lg tracking-widest">
           Oke-Oghene Amuwha
         </h2>
-        <h1 className="text-xl font-bold tracking-widest text-black dark:text-white md:text-4xl">
+        <h1 className="text-xl font-bold tracking-widest md:text-4xl">
           <span>{text}</span>
           <Cursor />
         </h1>

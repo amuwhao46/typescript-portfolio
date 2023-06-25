@@ -20,7 +20,7 @@ export default function Skills({ skills }: Props) {
         opacity: 1,
       }}
       id="skills"
-      className="relative mx-auto mt-32 flex min-h-[850px] max-w-7xl items-center justify-center rounded-2xl bg-white dark:bg-neutral-800 xl:flex-row xl:space-y-0 xl:px-10"
+      className="relative mx-auto mt-32 flex min-h-[850px] max-w-7xl snap-start items-center justify-center rounded-2xl bg-white dark:bg-neutral-800 xl:flex-row xl:space-y-0 xl:px-10"
     >
       <h1 className="absolute top-20 text-2xl font-semibold md:text-4xl">
         The <span className="text-orange-500">Skills</span> I've Learned
