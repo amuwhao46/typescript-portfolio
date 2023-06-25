@@ -24,7 +24,7 @@ export default function Projects({ projects }: Props) {
       className="relative z-0 mx-auto flex max-w-7xl flex-col items-center justify-evenly overflow-hidden text-left md:flex-row"
     >
       <h1 className="absolute top-20 text-2xl font-semibold md:text-4xl">
-        Notable <span className="text-orange-500">Projects</span> I've made
+        Neet <span className="text-orange-500">Projects</span> I've made
       </h1>
       <div className="relative z-20 flex w-full snap-x snap-mandatory overflow-y-hidden overflow-x-scroll scrollbar-thin scrollbar-track-gray-400/20 scrollbar-thumb-orange-500/80">
         {/* Projects */}
@@ -39,7 +39,7 @@ export default function Projects({ projects }: Props) {
               src={urlFor(project?.image).url()}
               alt="Image of project"
             />
-            <div className="max-w-6xl space-y-6 rounded-2xl bg-white/40 p-5 dark:bg-neutral-800/60 md:space-y-10 md:px-10">
+            <div className="max-w-6xl space-y-6 rounded-2xl bg-white/60 p-5 dark:bg-neutral-800/60 md:space-y-10 md:px-10">
               <Link
                 href={project.linkToBuild}
                 target="_blank"

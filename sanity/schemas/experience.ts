@@ -11,6 +11,11 @@ export default defineType({
       type: "string",
     },
     {
+      name: "queue",
+      title: "Queue",
+      type: "string",
+    },
+    {
       name: "companyImage",
       title: "CompanyImage",
       type: "image",

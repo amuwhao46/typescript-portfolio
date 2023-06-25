@@ -27,7 +27,7 @@ function WorkExperience({ experiences }: Props) {
       </h4>
       <div className="mt-40 flex w-full snap-x snap-mandatory space-x-5 overflow-x-scroll rounded-2xl pb-5 scrollbar-thin scrollbar-track-gray-400/20 scrollbar-thumb-orange-500/80">
         {experiences?.map((experience) => (
-          <ExperienceContainer key={experience._id} experience={experience} />
+          <ExperienceContainer key={experience?.queue} experience={experience} />
         ))}
       </div>
     </motion.div>
