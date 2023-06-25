@@ -22,7 +22,7 @@ export default function Contacts({ socials, pageInfo }: Props) {
         opacity: 1,
       }}
       id="contact"
-      className="relative mx-auto mt-32 flex h-screen max-w-7xl snap-start flex-col items-center justify-evenly rounded-2xl bg-white px-10 text-center dark:bg-neutral-800 md:flex-row md:text-left"
+      className="relative mx-auto mt-32 flex h-screen max-w-7xl flex-col items-center justify-evenly rounded-2xl bg-white px-10 text-center dark:bg-neutral-800 md:flex-row md:text-left"
     >
       <h1 className="absolute top-20 text-2xl font-semibold md:text-4xl">
         Ways to <span className="text-orange-500">Contact</span> Me

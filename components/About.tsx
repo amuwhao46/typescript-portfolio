@@ -14,7 +14,7 @@ function About({ pageInfo }: Props) {
       whileInView={{ opacity: 1 }}
       transition={{ duration: 1.5 }}
       id="about"
-      className="relative mx-auto flex max-w-7xl snap-start flex-col items-center justify-evenly rounded-2xl bg-white px-5 text-center dark:bg-neutral-800 md:h-screen md:flex-row md:space-y-1 md:px-20 md:text-left"
+      className="relative mx-auto flex max-w-7xl flex-col items-center justify-evenly rounded-2xl bg-white px-5 text-center dark:bg-neutral-800 md:h-screen md:flex-row md:space-y-1 md:px-20 md:text-left"
     >
       <h1 className="absolute top-20 text-2xl font-semibold md:text-4xl">
         Some <span className="text-orange-500">Background</span> Info
