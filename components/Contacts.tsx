@@ -32,12 +32,12 @@ export default function Contacts({ socials, pageInfo }: Props) {
         Me
       </h1>
       <div className="flex flex-col space-y-10">
-        <div className="flex cursor-pointer items-center justify-center space-x-3 rounded-2xl p-5 transition-all hover:bg-gray-100/80 hover:text-orange-400 dark:hover:bg-neutral-700/80 md:space-x-5">
-          <EnvelopeIcon className="inline-block h-7 w-7 text-black dark:text-gray-100" />
-          <a href="mailto: amuwhao46@gmail.com" rel="noreferrer">
+        <a href="mailto: amuwhao46@gmail.com" rel="noreferrer">
+          <div className="flex cursor-pointer items-center justify-center space-x-3 rounded-2xl p-5 transition-all hover:bg-gray-100/80 hover:text-orange-400 dark:hover:bg-neutral-700/80 md:space-x-5">
+            <EnvelopeIcon className="inline-block h-7 w-7 text-black dark:text-gray-100" />
             <p className="transition-color text-2xl">{pageInfo?.email}</p>
-          </a>
-        </div>
+          </div>
+        </a>
         <div className="mx-auto flex flex-row items-center justify-between space-x-5">
           {socials?.map((social) => (
             <SocialIcon
