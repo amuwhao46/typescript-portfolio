@@ -38,7 +38,7 @@ export default function Projects({ projects }: Props) {
             className="mt-32 flex w-screen flex-shrink-0 snap-center flex-col items-center justify-start space-y-5 rounded-lg p-10 md:w-[1000px] md:p-16"
           >
             <img
-              className="h-72 w-72 object-contain object-center md:h-96 md:w-96"
+              className="h-72 w-72 rounded-2xl object-contain object-center md:h-96 md:w-96"
               key={project._id}
               src={urlFor(project?.image).url()}
               alt="Image of project"
