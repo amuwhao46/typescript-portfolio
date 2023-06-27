@@ -30,7 +30,7 @@ function Hero({}: Props) {
           src={Logo}
           width={34}
           alt="Logo"
-          className="relative mx-auto object-cover"
+          className="relative mx-auto object-cover dark:invert"
         />
         <h2 className="text-lg tracking-widest">
           Oke-Oghene Amuwha
