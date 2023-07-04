@@ -4,14 +4,14 @@ module.exports = {
     "./app/**/*.{js,ts,jsx,tsx}",
     "./pages/**/*.{js,ts,jsx,tsx}",
     "./components/**/*.{js,ts,jsx,tsx}",
- 
+
     // Or if using `src` directory:
     "./src/**/*.{js,ts,jsx,tsx}",
   ],
   theme: {
     extend: {
       animation: {
-        blob: "blob 15s infinite"
+        blob: "blob 30s infinite",
       },
       keyframes: {
         blob: {
@@ -35,6 +35,6 @@ module.exports = {
     },
   },
   plugins: [
-  require('tailwind-scrollbar'),
+    // require('tailwind-scrollbar'),
   ],
-}
+};

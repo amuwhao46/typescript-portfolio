@@ -30,7 +30,7 @@ export default function Projects({ projects }: Props) {
         </span>{" "}
         I&apos;ve made
       </h1>
-      <div className="relative flex w-full snap-x snap-mandatory overflow-y-hidden overflow-x-scroll scrollbar-thin scrollbar-track-gray-400/20 scrollbar-thumb-orange-500/80">
+      <div className="scrollbar-thin scrollbar-track-gray-400/20 scrollbar-thumb-orange-500/80 relative flex w-full snap-x snap-mandatory overflow-y-hidden overflow-x-scroll">
         {/* Projects */}
         {projects?.map((project) => (
           <div
@@ -43,13 +43,13 @@ export default function Projects({ projects }: Props) {
               src={urlFor(project?.image).url()}
               alt="Image of project"
             />
-            <div className="max-w-6xl space-y-6 rounded-2xl bg-white/60 p-5 dark:bg-neutral-800/60 md:space-y-10 md:px-10">
+            <div className="flex max-w-6xl flex-col items-center justify-center space-y-6 rounded-2xl bg-white/60 p-5 dark:bg-neutral-800/60 md:mx-auto md:space-y-10 md:px-10">
               <Link
                 href={project.linkToBuild}
                 target="_blank"
                 rel="noopener noreferrer"
               >
-                <h4 className="text-center text-4xl font-semibold transition-colors ease-in-out hover:text-orange-400">
+                <h4 className="rounded-2xl p-3 text-center text-4xl font-semibold transition-all ease-in-out hover:bg-gray-100/80 hover:text-orange-400 dark:hover:bg-neutral-700/80">
                   {project.title}
                 </h4>
               </Link>

@@ -10,17 +10,7 @@ type Props = {
 export default function ExperienceContainer({ experience }: Props) {
   return (
     <article className="transition-color flex w-screen flex-shrink-0 cursor-pointer snap-center flex-col items-center space-y-7 overflow-hidden overflow-y-auto rounded-2xl bg-gradient-to-b from-orange-900 to-orange-600 p-10 opacity-40 grayscale transition-opacity duration-200 hover:opacity-100 hover:filter-none md:w-[600px] xl:w-[900px]">
-      <motion.img
-        initial={{
-          y: -100,
-          opacity: 0,
-        }}
-        transition={{ duration: 1.2 }}
-        whileInView={{
-          opacity: 1,
-          y: 0,
-        }}
-        viewport={{ once: true }}
+      <img
         className="h-32 w-32 rounded-full object-cover object-center xl:h-[200px] xl:w-[200px]"
         src={urlFor(experience?.companyImage).url()}
         alt="Company image"
