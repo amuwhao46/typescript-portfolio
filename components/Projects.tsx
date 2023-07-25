@@ -30,7 +30,7 @@ export default function Projects({ projects }: Props) {
         </span>{" "}
         I&apos;ve made
       </h1>
-      <div className="scrollbar-thin scrollbar-track-gray-400/20 scrollbar-thumb-orange-500/80 relative flex w-full snap-x snap-mandatory overflow-y-hidden overflow-x-scroll">
+      <div className="relative flex w-full snap-x snap-mandatory overflow-y-hidden overflow-x-scroll scrollbar-thin scrollbar-track-gray-400/20 scrollbar-thumb-orange-500/80">
         {/* Projects */}
         {projects?.map((project) => (
           <div
@@ -70,7 +70,6 @@ export default function Projects({ projects }: Props) {
           </div>
         ))}
       </div>
-      {/* <div className="absolute top-[30%] left-0 h-[500px] w-full -skew-y-12 bg-neutral-900/10" /> */}
     </motion.div>
   );
 }

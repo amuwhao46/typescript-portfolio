@@ -28,7 +28,7 @@ function WorkExperience({ experiences }: Props) {
           Experience
         </span>
       </h4>
-      <div className="scrollbar-thin scrollbar-track-gray-400/20 scrollbar-thumb-orange-500/80 mt-40 flex w-full snap-x snap-mandatory space-x-5 overflow-x-scroll rounded-2xl pb-5">
+      <div className="mt-40 flex w-full snap-x snap-mandatory space-x-5 overflow-x-scroll rounded-2xl pb-5 scrollbar-thin scrollbar-track-gray-400/20 scrollbar-thumb-orange-500/80">
         {experiences
           ?.sort((a, b) => (a.queue < b.queue ? -1 : 1))
           .map((experience) => (
