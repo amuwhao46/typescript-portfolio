@@ -23,19 +23,7 @@ function About({ pageInfo }: Props) {
         </span>{" "}
         Info
       </h1>
-      <motion.img
-        initial={{
-          x: -100,
-          opacity: 0,
-        }}
-        transition={{
-          duration: 1.2,
-        }}
-        whileInView={{
-          x: 0,
-          opacity: 1,
-        }}
-        viewport={{ once: true }}
+      <img
         src={urlFor(pageInfo?.profilePic).url()}
         className="mb-5 mt-40 h-32 w-32 rounded-full object-cover md:mb-0 md:h-96 md:w-64 md:rounded-lg xl:h-[400px] xl:w-[300px]"
       />

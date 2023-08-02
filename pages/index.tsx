@@ -49,11 +49,11 @@ export default function Home({
       <Projects projects={projects} />
       <Contacts socials={socials} pageInfo={pageInfo} />
 
-      <Link href="#hero">
-        <div className="sticky bottom-5 z-20 mb-5 flex w-full animate-bounce cursor-pointer items-center justify-center">
-          <ArrowSmallUpIcon className="h-10 w-10 rounded-full bg-neutral-800/10 fill-black p-2 backdrop-blur dark:fill-gray-100" />
-        </div>
-      </Link>
+      <div className="sticky flex items-center justify-center">
+        <Link href="#hero">
+          <ArrowSmallUpIcon className="bottom-10 z-20 h-10 w-10 animate-bounce cursor-pointer rounded-full bg-neutral-800/10 fill-white p-2 backdrop-blur dark:fill-gray-100" />
+        </Link>
+      </div>
 
       <Footer />
     </div>
