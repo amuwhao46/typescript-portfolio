@@ -49,9 +49,9 @@ export default function Home({
       <Projects projects={projects} />
       <Contacts socials={socials} pageInfo={pageInfo} />
 
-      <div className="sticky flex items-center justify-center">
+      <div className="fixed bottom-5 z-20 transform -translate-x-1/2 left-1/2">
         <Link href="#hero">
-          <ArrowSmallUpIcon className="bottom-10 z-20 h-10 w-10 animate-bounce cursor-pointer rounded-full bg-neutral-800/10 fill-white p-2 backdrop-blur dark:fill-gray-100" />
+          <ArrowSmallUpIcon className="h-10 w-10 animate-bounce cursor-pointer rounded-full bg-neutral-800/10 fill-white p-2 backdrop-blur dark:fill-gray-100" />
         </Link>
       </div>
 

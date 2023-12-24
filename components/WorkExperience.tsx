@@ -24,11 +24,11 @@ function WorkExperience({ experiences }: Props) {
     >
       <h4 className="absolute top-20 text-2xl font-semibold md:text-4xl">
         My Work{" "}
-        <span className=" bg-gradient-to-r from-red-600 to-orange-400 bg-clip-text text-transparent">
+        <span className=" bg-gradient-to-r from-teal-400 to-blue-600 bg-clip-text text-transparent">
           Experience
         </span>
       </h4>
-      <div className="mt-40 flex w-full snap-x snap-mandatory space-x-5 overflow-x-scroll rounded-2xl pb-5 scrollbar-thin scrollbar-track-gray-400/20 scrollbar-thumb-orange-500/80">
+      <div className="mt-40 flex w-full snap-x snap-mandatory space-x-5 overflow-x-scroll rounded-2xl pb-5 scrollbar-thin scrollbar-track-gray-400/20 scrollbar-thumb-blue-500/80">
         {experiences
           ?.sort((a, b) => (a.queue < b.queue ? -1 : 1))
           .map((experience) => (

@@ -18,7 +18,7 @@ function About({ pageInfo }: Props) {
     >
       <h1 className="absolute top-20 text-2xl font-semibold md:text-4xl">
         Some{" "}
-        <span className=" bg-gradient-to-r from-red-600 to-orange-400 bg-clip-text text-transparent">
+        <span className=" bg-gradient-to-r from-teal-400 to-blue-600 bg-clip-text text-transparent">
           Background
         </span>{" "}
         Info

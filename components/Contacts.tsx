@@ -26,14 +26,14 @@ export default function Contacts({ socials, pageInfo }: Props) {
     >
       <h1 className="absolute top-20 text-2xl font-semibold md:text-4xl">
         Ways to{" "}
-        <span className=" bg-gradient-to-r from-red-600 to-orange-400 bg-clip-text text-transparent">
+        <span className=" bg-gradient-to-r from-teal-400 to-blue-600 bg-clip-text text-transparent">
           Contact
         </span>{" "}
         Me
       </h1>
       <div className="flex flex-col space-y-10">
         <a href="mailto: amuwhao46@gmail.com" rel="noreferrer">
-          <div className="flex cursor-pointer items-center justify-center space-x-3 rounded-2xl p-5 transition-all hover:bg-gray-100/80 hover:text-orange-400 dark:hover:bg-neutral-700/80 md:space-x-5">
+          <div className="flex cursor-pointer items-center justify-center space-x-3 rounded-2xl p-5 transition-all hover:bg-gray-100/80 hover:text-blue-400 dark:hover:bg-neutral-700/80 md:space-x-5">
             <EnvelopeIcon className="inline-block h-7 w-7 text-black dark:text-gray-100" />
             <p className="transition-color text-2xl">{pageInfo?.email}</p>
           </div>

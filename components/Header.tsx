@@ -24,7 +24,7 @@ export default function Header({}: Props) {
         <div className="block md:hidden">
           <button
             onClick={handleOnClick}
-            className="flex items-center rounded border border-orange-500 px-3 py-2 text-orange-500 transition-colors hover:border-orange-200 hover:text-orange-200"
+            className="flex items-center rounded border border-blue-500 px-3 py-2 text-blue-500 transition-colors hover:border-blue-200 hover:text-blue-200"
           >
             <svg
               className="h-3 w-3 fill-current"
@@ -46,7 +46,7 @@ export default function Header({}: Props) {
               onClick={handleOnClick}
               href="#about"
               rel="noopener noreferrer"
-              className="mr-4 mt-4 block transition-colors hover:text-orange-400 md:mt-0 md:inline-block"
+              className="mr-4 mt-4 block transition-colors hover:text-blue-400 md:mt-0 md:inline-block"
             >
               About
             </Link>
@@ -54,7 +54,7 @@ export default function Header({}: Props) {
               onClick={handleOnClick}
               href="#experience"
               rel="noopener noreferrer"
-              className="mr-4 mt-4 block transition hover:text-orange-400 md:mt-0 md:inline-block"
+              className="mr-4 mt-4 block transition hover:text-blue-400 md:mt-0 md:inline-block"
             >
               Experience
             </Link>
@@ -62,7 +62,7 @@ export default function Header({}: Props) {
               onClick={handleOnClick}
               href="#skills"
               rel="noopener noreferrer"
-              className="mr-4 mt-4 block transition-colors hover:text-orange-400 md:mt-0 md:inline-block"
+              className="mr-4 mt-4 block transition-colors hover:text-blue-400 md:mt-0 md:inline-block"
             >
               Skills
             </Link>
@@ -70,7 +70,7 @@ export default function Header({}: Props) {
               onClick={handleOnClick}
               href="#projects"
               rel="noopener noreferrer"
-              className="mr-4 mt-4 block transition-colors hover:text-orange-400 md:mt-0 md:inline-block"
+              className="mr-4 mt-4 block transition-colors hover:text-blue-400 md:mt-0 md:inline-block"
             >
               Projects
             </Link>
@@ -78,16 +78,16 @@ export default function Header({}: Props) {
               onClick={handleOnClick}
               href="#contact"
               rel="noopener noreferrer"
-              className="mr-4 mt-4 block transition-colors hover:text-orange-400 md:mt-0 md:inline-block"
+              className="mr-4 mt-4 block transition-colors hover:text-blue-400 md:mt-0 md:inline-block"
             >
               Contact
             </Link>
             <Link
               onClick={handleOnClick}
-              href="files/Oke-Oghene_Amuwha_Resume.pdf"
+              href="files/Oke_Resume.pdf"
               target="_blank"
               rel="noopener noreferrer"
-              className="mt-4 inline-block rounded border border-orange-500 px-4 py-2 text-sm leading-none text-orange-500 transition-colors hover:border-transparent hover:bg-orange-500 hover:text-black md:mt-0"
+              className="mt-4 inline-block rounded border border-blue-500 px-4 py-2 text-sm leading-none text-blue-500 transition-colors hover:border-transparent hover:bg-blue-500 hover:text-black md:mt-0"
             >
               Resume
             </Link>
