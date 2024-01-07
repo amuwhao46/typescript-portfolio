@@ -2,14 +2,19 @@ import React, { useState } from "react";
 import Image from "next/image";
 import Logo from "../public/Logo.svg";
 import Link from "next/link";
+import { PageInfo } from "@/typings";
+import { getFileUrl } from "@/sanity/lib/resume";
 
-type Props = {};
+type Props = {
+  pageInfo: PageInfo;
+};
 
-export default function Header({}: Props) {
+export default function Header({ pageInfo }: Props) {
   const [navbar, setNavbar] = useState(false);
   const handleOnClick = () => {
     setNavbar(!navbar);
   };
+  const resumeUrl = getFileUrl(pageInfo?.resume?.asset?._ref);
   return (
     <header>
       <nav className="flex-center fixed inset-x-0 z-50 flex flex-wrap justify-between p-5 shadow-lg backdrop-blur">
@@ -84,7 +89,7 @@ export default function Header({}: Props) {
             </Link>
             <Link
               onClick={handleOnClick}
-              href="files/Oke_Resume.pdf"
+              href={resumeUrl}
               target="_blank"
               rel="noopener noreferrer"
               className="mt-4 inline-block rounded border border-blue-500 px-4 py-2 text-sm leading-none text-blue-500 transition-colors hover:border-transparent hover:bg-blue-500 hover:text-black md:mt-0"

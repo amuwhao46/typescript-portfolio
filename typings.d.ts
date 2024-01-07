@@ -17,7 +17,14 @@ export interface PageInfo extends SanityBody {
   _type: "pageInfo";
   name: string;
   role: string;
-  heroImage: Image;
+  resume: {
+    _type: "file";
+    asset: {
+      _ref: string;
+      _type: "reference";
+      url: string;
+    };
+  };
   backgroundInformation: string;
   profilePic: Image;
   email: string;

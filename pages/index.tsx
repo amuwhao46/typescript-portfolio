@@ -41,8 +41,8 @@ export default function Home({
         <link rel="icon" href="/Favicon_Logo.png" />
       </Head>
 
-      <Header />
-      <Hero />
+      <Header pageInfo={pageInfo} />
+      <Hero pageInfo={pageInfo} />
       <About pageInfo={pageInfo} />
       <WorkExperience experiences={experiences} />
       <Skills skills={skills} />

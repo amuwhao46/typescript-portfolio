@@ -22,11 +22,18 @@ export default function ExperienceContainer({ experience }: Props) {
         <p className="mt-1 text-center text-2xl font-bold text-white md:text-left">
           {experience?.companyPosition}
         </p>
-        <p className="py-5 text-center uppercase text-white md:text-left">
-          {new Date(experience?.dateStarted).toDateString()} -{" "}
+        <p className="py-5 text-center capitalize text-white md:text-left">
+          {new Date(experience?.dateStarted).toLocaleString("default", {
+            month: "long",
+            year: "numeric",
+          })}{" "}
+          -{" "}
           {experience.isCurrentlyWorkingHere
-            ? "PRESENT"
-            : new Date(experience?.dateEnded).toDateString()}
+            ? "Present"
+            : new Date(experience?.dateEnded).toLocaleString("default", {
+                month: "long",
+                year: "numeric",
+              })}
         </p>
         <ul className="ml-5 list-disc space-y-4 text-lg text-white">
           {experience.points?.map((point, i) => (

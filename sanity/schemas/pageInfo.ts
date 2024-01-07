@@ -16,11 +16,11 @@ export default defineType({
       type: "string",
     },
     {
-      name: "heroImage",
-      title: "Image",
-      type: "image",
+      name: "resume",
+      title: "Resume",
+      type: "file",
       options: {
-        hotspot: true,
+        accept: ".pdf",
       },
     },
     {

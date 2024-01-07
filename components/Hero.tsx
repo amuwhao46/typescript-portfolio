@@ -4,12 +4,15 @@ import BackgroundCircles from "./BackgroundCircles";
 import { motion } from "framer-motion";
 import Logo from "../public/Logo.svg";
 import Image from "next/image";
+import { PageInfo } from "@/typings";
 
-type Props = {};
+type Props = {
+  pageInfo: PageInfo;
+};
 
-function Hero({}: Props) {
+function Hero({ pageInfo }: Props) {
   const [text, count] = useTypewriter({
-    words: ["Full-stack Web Developer", "UI/UX Designer"],
+    words: ["Full-stack Web Developer", "UI/UX Designer", "Software Engineer"],
     loop: true,
     delaySpeed: 2000,
   });
@@ -32,9 +35,7 @@ function Hero({}: Props) {
           alt="Logo"
           className="relative mx-auto object-cover dark:invert"
         />
-        <h2 className="text-lg tracking-widest">
-          Oke-Oghene Amuwha
-        </h2>
+        <h2 className="text-lg tracking-widest">{pageInfo.name}</h2>
         <h1 className="text-xl font-bold tracking-widest md:text-4xl">
           <span>{text}</span>
           <Cursor />
